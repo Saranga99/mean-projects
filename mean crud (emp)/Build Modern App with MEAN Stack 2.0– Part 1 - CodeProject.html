@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part?display=Print -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+
+	
+	<link rel="preconnect" href="https://apps.developermedia.com/">
+	<link rel="preconnect" href="https://cdn1.developermedia.com/">
+	<link rel="preconnect" href="https://cdn.ampproject.org/">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://ajax.googleapis.com/">
+	<link rel="preconnect" href="https://adservice.google.com/">
+	<link rel="preconnect" href="https://www.googletagservices.com/">
+	<link rel="preconnect" href="https://www.googletagmanager.com/">
+	<link rel="preconnect" href="https://www.google.com/">
+	<link rel="preconnect" href="https://www.google-analytics.com/">
+	<link rel="preconnect" href="https://pagead2.googlesyndication.com/">
+
+	<link rel="preconnect" href="https://codeproject.freetls.fastly.net/">
+
+
+	<link rel="preload" href="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/logo250x135.gif" as="image">
+
+
+	<link rel="preload" href="https://www.codeproject.com/App_Themes/CodeProject/Img/logo135-bg.gif" as="image">
+	<link rel="preload" href="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/jquery.min.js.download" as="script" type="text/javascript">
+
+
+	<title>Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject</title> 
+    
+	<!-- inlined file /App_Themes/CodeProject/Css/article.critical.min.css. Minimized in Release. -->
+<style type="text/css">
+/*! CSS Used from: /App_Themes/CodeProject/Css/Main.css?dt=2.8.20201208.1 ; media=all */
+@media all{.theme1-background{background-color:#f90}.blank-background{background-color:#fff}div,span,iframe,a,code,img,strike,strong,form,label,table,tbody,tr,td,li,ol,ul{margin:0;padding:0;border:0}body,p,h1,h2,h3,h4,h5,li,tr,td{font-family:"Segoe UI",Arial,Sans-Serif;font-size:14px;line-height:1.4;color:#111}body{margin:0}h1,h3,h4,h5{font-weight:bold}h1{color:#333;padding:0;margin:0 0 7px;text-align:left}h2{margin:20px 0 11px;padding:0;padding-bottom:10px;color:#333}h3{color:#f90}h5{color:#808080;margin-bottom:2px}h1{font-size:29px;font-weight:200}h2{font-size:29px;font-weight:200}h3{font-size:19px;font-weight:normal}h4{font-size:16px}h5{font-size:14px;font-weight:bold}pre{color:#000;background-color:#fbedbb;padding:6px;font:13px Consolas,"Courier New",Courier,mono;white-space:pre;overflow:auto !important;border:solid 1px #fbedbb;-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}code{color:#900;font:15px Consolas,"Courier New",Courier,mono}table{background-color:Transparent}img{-ms-interpolation-mode:bicubic}a{text-decoration:none;color:#005782}a:visited{color:#800080}a:active{text-decoration:underline}a:hover{text-decoration:underline}a:focus{outline:none !important}img:focus{outline:none !important}a:not([href]){color:inherit;text-decoration:none}::selection{background-color:#f90;color:#fff;text-shadow:none}::-moz-selection{background-color:#f90;color:#fff;text-shadow:none}input[type="text"],input[type="search"],select,textarea{border:1px solid #d7d7d7;font-size:14px;padding:5px}input[type="text"]:focus,input[type="search"]:focus,select:focus,textarea:focus{border:1px solid #a0acbf}input[type=radio]{border:none}textarea{font-family:Consolas,monospace}a.button,.button{color:#fff;background-color:#e08900;border:1px solid #ccc;text-decoration:none !important;white-space:nowrap;font-size:100%;padding:4px;cursor:pointer;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px}button.button{font-size:90%}.button.compose{color:#fff !important;background-color:#d14836 !important;border-color:#d14836 !important}.button.compose a,.button.compose a:hover{color:#fff !important}.button.compose:hover{border-color:#c53727 !important}.button.safe{border-color:#76ab40}.button.safe:hover{border-color:#577d30}.tiny-text{font-size:11px}.small-text{font-size:12px !important}.medium-text{font-size:16px}.invisible{display:none}.subdue{color:#808080}.bold{font-weight:bold}.align-left{text-align:left !important}.align-right{text-align:right !important}.align-center{text-align:center}.align-middle{vertical-align:middle}.float-right{float:right}.float-left{float:left}.extended{width:100%;box-sizing:border-box}.padded-top{padding-top:20px !important}.tight{margin:0 !important;padding:0 !important}.spaced{margin:10px}.nowrap{white-space:nowrap}.fixed-layout{table-layout:fixed}.clipped{overflow:hidden}.inline{display:inline-block}.raised{background-color:#fff8df;border:1px solid #ccc;-moz-box-shadow:4px 4px 16px 1px rgba(0,0,0,.25);-webkit-box-shadow:4px 4px 16px 1px rgba(0,0,0,.25);box-shadow:4px 4px 16px 1px rgba(0,0,0,.25)}.border-none{border-style:none !important}.border-none:focus{border-style:none !important;outline:transparent}ol,ul{padding-left:40px;margin:10px 0}ul li.compact{font-size:12px}ul.download{margin-top:25px}ul.download li{background:url("/images/download24.png") no-repeat scroll left center transparent;font-weight:bold;list-style-type:none;margin:0 0 6px -40px;padding:0 0 1px 30px;vertical-align:middle}div.admin-only{background-color:#ffffbe}.annotation{margin:20px 0;background-color:#ffffe1;color:#333;border:1px solid #ccc;padding:15px}.trace{padding:20px;background-color:#eee;color:#333;border:1px solid #f00;font-size:11px}.safe{background-color:#76ab40 !important}textarea,input[type="text"],input[type="submit"]{-webkit-appearance:none;border-radius:0}div.pagelog{border:0 !important;padding:0 !important}div.pagelog.slow{background-color:#ff0;color:#f00 !important}div.pagelog>span{display:inline-block}div.pagelog>span.timestamp{width:60px;padding-right:5px;text-align:right}div.pagelog>span.timestamp .partial{font-size:70%;vertical-align:top}div.pagelog>span.duration{width:60px;text-align:right;padding:0 10px 0 5px}div.pagelog>span.calldata{padding-left:10px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;display:inline-block}.container-content{background-color:#fff;position:relative;zoom:1;padding:0 9px;cursor:default}.container-content-wrap{margin:auto;max-width:1056px}.container-content pre{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;_white-space:pre;word-break:break-word;-ms-word-break:break-word}.flex-container{display:-webkit-box !important;display:-moz-box !important;display:-ms-flexbox !important;display:-webkit-flex !important;display:flex !important}.flex-extend{justify-content:space-between}.flex-item{-webkit-box-flex:1 !important;-moz-box-flex:1 !important;-webkit-flex:1 !important;-ms-flex:1 !important;flex:1 !important}.flex-item-tight{flex:0 1 auto}.button-group{white-space:nowrap;padding-right:1em;margin:0}.hover-container{display:block;position:relative}.hover-container .button-group,.hover-row .button-group{display:none}.hover-row:hover,.hover-row:hover td{background-color:#fff8df !important}.hover-container:hover .button-group{background-color:inherit;margin:0;position:absolute;top:0;right:3px;display:block}.clearfix:after,.container:after{display:block;content:'.';visibility:hidden;height:0;clear:both}.clearfix,.container{display:inline-block;display:block}.access-link,.access-link img{position:absolute;top:0;left:0;width:1px;height:1px;z-index:101;border-style:none;margin-top:-1px;overflow:hidden}.site-top-menu{white-space:nowrap;position:absolute;z-index:101;width:100% !important}.site-top-menu .main-content{width:100% !important}.site-top-menu .main-content .memberbar{margin-left:90px;margin-right:10px}.site-top-menu.fixed .main-content{margin:auto;max-width:1056px}.site-header{background-image:url('/App_Themes/CodeProject/Img/logo135-bg.gif');white-space:nowrap;overflow:hidden}.site-header .main-content{position:relative;overflow:hidden;white-space:nowrap}.site-header .logo{display:inline-block}.site-header .promo{display:inline-block;position:absolute;top:33px;right:0}.site-header.fixed .main-content{margin:auto;max-width:1056px}@media(max-width:1000px){.site-header .promo{left:250px}}.sub-headerbar{padding-right:9px;position:relative;margin:auto;max-width:1044px}.sub-headerbar-divider{margin-left:10px;height:1px;border-bottom:1px solid #ccc;position:absolute;bottom:2px;left:0;right:9px}.memberbar{height:25px;padding-top:10px;color:#999;font-size:12px}.memberbar a{color:#808080;font-size:12px}.member-links .me{font-weight:bold}.member-links .me.mobile-only{font-size:24px}.member-links .tooltip-flyout{width:13em !important;right:-16px !important;left:auto !important;border-bottom:4px #f90 solid}.notification-count{background-color:#f00 !important;color:#fff !important;font-weight:bold;margin-right:3px;font-size:11px;padding:0 4px 1px 4px;vertical-align:baseline;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px}.notification-count,.notification-count:hover,.notification-count:visited{color:#fff}.notification-dropdown{left:auto !important;right:-115px;width:350px !important}.notification-dropdown .notification-list{max-height:400px;overflow-y:auto}div.navbar{white-space:nowrap}.navmenu{background:#fff;color:#4d4d4d;padding:0;margin:0;list-style:none;height:25px}.navmenu ul,.navmenu li{margin:0;padding:0}.navmenu .has-submenu{position:absolute;right:5px;padding-left:10px}.navmenu>li:hover>a,.navmenu>li>a:active{border:1px solid #ccc}.navmenu ul{border:1px solid #ccc;border-bottom-color:#fff}.navmenu>li{margin:0 11px 2px 2px}.navmenu>li:active,.navmenu>li:active>a,.navmenu>li:hover,.navmenu>li>a:active{background:#fff !important;color:#4d4d4d !important}.navmenu>li>a{padding:2px 7px 6px 7px;border:1px solid transparent;font-weight:bold}.navmenu a{display:block;float:left;color:#666;background:#fff;font-size:16px;padding:0 9px;text-decoration:none;white-space:nowrap}.navmenu a.fly{white-space:nowrap}.navmenu ul{background:#fff;position:absolute;left:-9999px;top:-9999px;list-style:none}.navmenu li{float:left;color:#4d4d4d}.navmenu li.last{height:9px}.navmenu li a:active,.navmenu li a:hover{color:#fff;background-color:#f90}.navmenu li>a:active,.navmenu li:hover,.navmenu li:hover>a,.navmenu li a.selected{position:relative;color:#fff;background-color:#f90}.navmenu li.openable:hover ul{left:0;top:30px;z-index:500}.navmenu li.openable:hover li.openable:active>ul,.navmenu li.openable:hover li.openable:hover>ul{left:-1px;margin-left:100%;top:-1px;z-index:500}.navmenu li.openable:hover>ul ul{position:absolute;left:-9999px;top:-9999px;width:auto}.navmenu li li:hover ul.taxonomy{left:100%;margin-left:-1px;top:-1px}.navmenu li ul{border-bottom:5px solid #f90}.navmenu li li{float:none}.navmenu li li:active>a.fly,.navmenu li li:hover>a.fly{color:#fff;background-color:#f90}.navmenu li li a{float:none;font-size:13px;font-weight:normal}.navmenu li li a.fly{color:#4d4d4d;background-color:#fff;padding:2px 20px}.navmenu li li a.break{margin-bottom:15px}.navmenu li li a.highlight1,.navmenu li li a.highlight1:active,.navmenu li li a.highlight1:hover{background-color:#090}.navmenu li li a.highlight2,.navmenu li li a.highlight2:active,.navmenu li li a.highlight2:hover{background-color:#f90}.navmenu li li a.highlight3,.navmenu li li a.highlight3:active,.navmenu li li a.highlight3:hover{background-color:#000}.navmenu li li a.highlight1,.navmenu li li a.highlight2,.navmenu li li a.highlight3{color:#fff;font-size:15px;margin:5px 0;padding:9px 20px}.site-footer{display:-webkit-box !important;display:-moz-box !important;display:-ms-flexbox !important;display:-webkit-flex !important;display:flex !important;padding-top:5px;width:100%;font-size:11px;color:#999}.site-footer .align-left,.site-footer .align-center,.site-footer .align-right{-webkit-box-flex:1 !important;-moz-box-flex:1 !important;-webkit-flex:1 !important;-ms-flex:1 !important;flex:1 !important}.site-footer .align-left{flex:1 0 100px}.site-footer .align-center{flex:0 1 0%;white-space:nowrap}.site-footer .align-right{flex:1 0 100px}.site-footer .page-width .active{border-bottom:2px solid #f90}.admin-bar{margin-left:20px}.admin-bar img{vertical-align:text-bottom;opacity:.6;margin-left:7px}.admin-bar img:hover{opacity:1}.searchbar{padding:0}.searchbar .search{margin-bottom:4px;padding:2px 5px 0;border:1px solid #ccc}.searchbar .search.subdue{color:#ccc}.searchbar input.search{width:190px;border:none;font-size:11px;padding:4px 2px}.searchbar .search-advanced{padding:8px;width:203px;z-index:1000;background-color:#fff;border:solid 1px #ccc;position:absolute;top:-4px;right:0}.search td{background-color:#fff}.article-container-parts{display:-webkit-box !important;display:-moz-box !important;display:-ms-flexbox !important;display:-webkit-flex !important;display:flex !important}.article-container{-webkit-box-flex:1 !important;-moz-box-flex:1 !important;-webkit-flex:1 !important;-ms-flex:1 !important;flex:1 !important;background-color:#fff;color:#111;zoom:1;position:relative;max-width:730px;min-height:675px}.article-container .article{margin:0 20px 0 10px;line-height:143%}.article-left-sidebar{width:120px;min-width:120px;min-height:400px;font-size:12px;border-right:1px solid #f2f2f2;padding:0}.article-left-sidebar .article-left-sidebar-inner{width:120px;min-width:120px}.article-left-sidebar .tabs>div{padding:5px 0 5px 10px}.article-left-sidebar .selected{font-weight:bold;background:transparent url("/images/right-selected.gif") no-repeat scroll right 9px}.article-left-sidebar h4{color:#f90;font-size:12px;font-weight:bold}.article-left-sidebar .stats div div div{padding:0 0 10px 10px;color:#666}.article-right-sidebar{width:160px;margin-left:10px;font-size:12px}.article-right-sidebar .gototop{text-align:center;padding:10px 0;opacity:0;-webkit-transition:opacity .3s linear 0ms;-moz-transition:opacity .3s linear 0ms;-o-transition:opacity .3s linear 0ms;transition:opacity .3s linear 0ms}.article-right-sidebar .stuck .gototop{opacity:1;-webkit-transition:opacity .3s linear 0ms;-moz-transition:opacity .3s linear 0ms;-o-transition:opacity .3s linear 0ms;transition:opacity .3s linear 0ms}.article-right-sidebar .stuck .gototop a{border:1px solid #ccc;padding:3px 10px;border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px}.container-content .edit-links{margin:21px 0 0 10px}.article-summary{padding:0 10px 0 10px;overflow:hidden}.article-summary ul.prize-list{background:url("/images/award24.gif") no-repeat scroll left 5px transparent;list-style-type:none;margin:0 0 6px 0;padding:0 0 1px 30px;vertical-align:middle}.article-summary ul.prize-list li{font-size:12px;line-height:17px}.article h1{margin:0 0 15px 0}.article h2{color:#f90}.article pre{overflow:auto}.article .header .title{color:#808080}.article .header .author{font-weight:bold;min-width:100px}.article .header .author a{color:#808080}.article .header .avatar{max-width:48px;max-height:48px;margin-right:10px;overflow:unset}.article .header .date{white-space:nowrap}.article .header .license{margin-left:15px}.article img.lazyload{opacity:0}.article img.lazyloaded{opacity:1;transition:opacity 300ms}.article .share-list{margin-bottom:40px;width:385px;display:inline-block}.article .summary{color:#808080;padding:40px 0 15px 0}.article .text{padding-top:10px}.article-nav{text-align:right;margin-top:21px;vertical-align:middle;line-height:15px}.msg-728x90{width:728px;height:90px;overflow:hidden}.msg-300x250{width:300px;height:250px;overflow:hidden}.msg-160x600{width:160px;height:600px;overflow:hidden}div.readlaterlist-dropdown{width:18em}.tags{line-height:190%}.tags .t{background:none repeat scroll 0 0 transparent;border:1px solid transparent;border-radius:12px 0 0 12px;line-height:1.4;padding:0 2px 0 4px;position:relative;text-decoration:none;margin:2px 0 4px 0;white-space:nowrap}.tags .t .follow{opacity:.3;margin-bottom:-1px}.tags .t .follow:hover{opacity:1}.tags .t.followed{background-color:transparent !important}.tags .t.followed img{opacity:1 !important}.tags .t:hover{background-color:#fff8ba !important;border:1px solid #e5dc8a;text-decoration:none}.tags .t a{color:#666;display:inline-block;margin-right:3px;padding-left:5px;text-overflow:ellipsis}.container-breadcrumb{font-size:12px;margin-top:5px;color:#808080;margin:12px 0 35px}.container-breadcrumb a{color:#808080}.code-comment{color:#008000;font-style:italic}.code-summarycomment{color:#808080}.code-keyword{color:#00f}.code-sdkkeyword{color:#399}.code-string{color:#800080}.code-attribute{color:#f00}.code-leadattribute{color:#800000}.code-digit{color:#000080}.pre-action-link{position:relative;font-size:11px;text-align:right;color:#999;display:inline}.pre-action-link span{cursor:pointer;margin:0;-webkit-transition:color .1s linear;-moz-transition:color .1s linear;-o-transition:color .1s linear;transition:color .1s linear}.pre-action-link img{vertical-align:text-top;opacity:.5;-webkit-transition:opacity .1s linear 0ms;-moz-transition:opacity .1s linear 0ms;-o-transition:opacity .1s linear 0ms;transition:opacity .1s linear 0ms}.pre-action-link:hover span{color:#005782}.pre-action-link:hover img{opacity:1}.speech-bubble-container-up,.speech-bubble-container-up-right{position:relative}.speech-bubble-up,.speech-bubble-up-right{padding:.6em;border:1px solid #ccc;background-color:#fff !important;margin:15px;text-decoration:none;font-weight:normal;text-align:left;white-space:normal;color:#333;font-size:11px}.tooltip .speech-bubble-up,.tooltip .speech-bubble-up-right{-moz-box-shadow:4px 4px 16px 1px rgba(0,0,0,.25);-webkit-box-shadow:4px 4px 16px 1px rgba(0,0,0,.25);box-shadow:4px 4px 16px 1px rgba(0,0,0,.25)}.speech-bubble-pointer-up,.speech-bubble-pointer-up-right,.speech-bubble-pointer-up-inner,.speech-bubble-pointer-up-right-inner{width:0;height:0;border-top-width:0;background:none}.speech-bubble-pointer-up,.speech-bubble-pointer-up-right{border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:1px solid #ccc;border-bottom-width:14px;margin-left:35px;position:absolute;top:-12px;_display:none}.speech-bubble-pointer-up-inner,.speech-bubble-pointer-up-right-inner{border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:12px solid #fff;margin-left:-5px;margin-bottom:-16px;padding-top:4px;position:absolute;_display:none}.speech-bubble-container-up-right .speech-bubble-pointer-up-right{margin-left:0;margin-right:0;right:35px}.tooltip{position:relative;text-decoration:none}.tooltip .speech-bubble-container-up,.tooltip .speech-bubble-container-up-right,.tooltip .tooltip-flyout{display:none;opacity:0;-webkit-transition:opacity .2s linear 0ms;-moz-transition:opacity .2s linear 0ms;-o-transition:opacity .2s linear 0ms;transition:opacity .2s linear 0ms}.tooltip:hover .speech-bubble-container-up,.tooltip:active .speech-bubble-container-up,.tooltip:hover .speech-bubble-container-up-right,.tooltip:active .speech-bubble-container-up-right,.tooltip:hover .tooltip-flyout,.tooltip:active .tooltip-flyout{display:block;z-index:16777271;opacity:1;-webkit-transition:opacity .2s linear 0ms;-moz-transition:opacity .2s linear 0ms;-o-transition:opacity .2s linear 0ms;transition:opacity .2s linear 0ms}.tooltip:hover .speech-bubble-container-up,.tooltip:active .speech-bubble-container-up{left:-35px}.tooltip:hover .speech-bubble-container-up-right,.tooltip:active .speech-bubble-container-up-right{right:-25px}.tooltip:hover .speech-bubble-container-up,.tooltip:active .speech-bubble-container-up,.tooltip:hover .speech-bubble-container-up-right,.tooltip:active .speech-bubble-container-up-right{text-decoration:none !important;position:absolute;width:150px;color:#000 !important;cursor:text}.tooltip:hover .tooltip-flyout,.tooltip:active .tooltip-flyout,.tooltip:hover .speech-bubble-container-up-right .speech-bubble-pointer-up-right,.tooltip:active .speech-bubble-container-up-right .speech-bubble-pointer-up-right,.tooltip:hover .speech-bubble-container-up .speech-bubble-pointer-up,.tooltip:active .speech-bubble-container-up .speech-bubble-pointer-up{top:1px}a:hover.tooltip{text-decoration:none !important}.tooltip-flyout{position:relative;border:1px solid #ccc;color:#666;background-color:#fff;margin:15px;z-index:2147483646;white-space:normal;font-weight:normal;text-align:left;cursor:text;width:175px;-moz-box-shadow:4px 4px 16px 1px rgba(0,0,0,.25);-webkit-box-shadow:4px 4px 16px 1px rgba(0,0,0,.25);box-shadow:4px 4px 16px 1px rgba(0,0,0,.25)}.tooltip:hover .tooltip-flyout,.tooltip:active .tooltip-flyout{position:absolute;left:-16px;top:0;display:block}.tooltip-flyout .list-item{text-decoration:none;padding:4px 15px;display:block}.tooltip-flyout .list-item:hover,.tooltip-flyout .list-item:hover a{text-decoration:none;color:#fff !important;background-color:#f90 !important}.report-header{font-weight:bold;font-size:14px;padding:4px 10px 0 16px}.report-header img{vertical-align:middle}.report-prompt{display:-webkit-box !important;display:-moz-box !important;display:-ms-flexbox !important;display:-webkit-flex !important;display:flex !important;justify-content:flex-start;font-size:12px;padding:2px 0;margin:2px 0}.report-prompt a{flex:1 1 auto}.report-comment{width:175px;margin-left:15px}.report-count-inline{display:inline-block;width:15px;color:#666}.modal{position:fixed;z-index:10000;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0);display:none;-webkit-transition:background-color .2s linear 0ms;-moz-transition:background-color .2s linear 0ms;-o-transition:background-color .2s linear 0ms;transition:background-color .2s linear 0ms}.readingListModal .modal_add_row{margin-bottom:5px}.readingListModal .modal_label{display:inline-block;width:80px}.readingListModal .modal_input_text{width:280px}.readingListModal .modal_loadingReadingLists{width:100%;text-align:center}.readingListModal .modal_readingLists{display:flex;flex-direction:column;text-align:left}.readingListModal .modal_readingListsColumn{text-align:left;min-height:100px;max-height:125px;overflow-y:auto;margin-bottom:10px}.readingListModal .modal_createReadingListRow{display:flex;flex-direction:row;align-items:center;justify-content:center}.readingListModal .modal_createReadingListRow:hover{color:#f90;cursor:pointer}.readingListModal .modal_createReadingListText{margin-left:10px}.readingListModal .modal_readingListAddBox{display:none}.readingListModal .modal_readingListAddBoxColumn{display:flex;flex-direction:column;align-items:flex-start}.readingListModal .modal_addBoxText{width:100%;text-align:center;margin-bottom:15px}.readingListModal .modal_createAndAddButtonContainer{display:flex;flex-direction:column;align-items:center;margin-top:15px;margin-bottom:15px;width:100%}.readingListModal .modal_createAndAddButton{width:200px}.readingListModal .modal_createAndAddStatusText{align-self:center;height:25px}.readingListModal .modal_readingListFilterBox{width:100%;text-align:left}.readingListModal .modal_readingListFilterInput{height:25px;outline:0;border:1px solid #ccc;border-radius:3px;width:75%}.readingListModal .modal_makePrimaryCheckBox{text-align:center;margin-bottom:10px}.readingListModal .modal_overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);display:flex;justify-content:center;align-items:center}.readingListModal .modal_container{background-color:#fff;padding:20px 30px;min-width:500px;max-width:500px;min-height:40vh;max-height:80vh;border-radius:4px;overflow-y:auto;box-sizing:border-box}.readingListModal .modal_header{display:flex;justify-content:space-between;align-items:center}.readingListModal .modal_title{margin-top:0;margin-bottom:0;color:#f90;box-sizing:border-box}.readingListModal .modal_close{background:transparent;border:0}.readingListModal .modal_header .modal_close:before{content:"✕"}.readingListModal .modal_content{margin-top:1rem;margin-bottom:2rem;line-height:1.5;color:rgba(0,0,0,.8)}.readingListModal .modal_btn{font-size:.875rem;padding-left:1rem;padding-right:1rem;padding-top:.5rem;padding-bottom:.5rem;background-color:#e6e6e6;color:rgba(0,0,0,.8);border-radius:.25rem;border-style:none;border-width:0;cursor:pointer;-webkit-appearance:button;text-transform:none;overflow:visible;line-height:1.15;margin:0;will-change:transform;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translateZ(0);transform:translateZ(0);transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.readingListModal .modal_btn:focus,.readingListModal .modal_btn:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}.readingListModal .modal_btn-primary{background-color:#00449e;color:#fff}.bottom-promo{height:90px;margin-top:10px;overflow:hidden}.bottom-promo .msg-728x90{width:728px;margin:0 auto}.msg-728x90{overflow:hidden;position:relative;height:90px;min-width:728px}body .msg-728x90{*float:right}body .bottom-promo .msg-728x90{*float:none}table.forum{table-layout:fixed;margin:0 0 20px 0;padding:0 !important;width:100%}.forum table{border-collapse:separate}.forum .header1,.forum .header1 TD{color:#333;font-size:12px;vertical-align:middle}.forum .header2,.forum .header2 TD{color:#fff;background-color:#f90;font-size:12px;vertical-align:middle}.forum .header2 input,.forum .header2 TD input,.forum .header2 select,.forum .header2 TD select{padding:2px}.forum .email-alert{border:1px solid #577d30;background-color:#76ab40 !important;text-decoration:none !important;white-space:nowrap;font-size:100%;margin:3px 4px 5px 0;padding:4px 6px;cursor:pointer;float:right;color:#fff;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px}.forum .email-alert:hover{border-color:#577d30}.forum .button{border:1px solid #fc6;margin:1px}.forum .new-message.button{margin:5px 4px 5px 0;padding:5px 10px}.forum .new-message.button a{font-weight:normal;font-size:16px}.forum .searchbar{border:1px solid #ccc;padding:4px 0 0 0;margin:3px 0}.forum .searchbar .search{width:200px}.forum .searchbar input[type=image]{vertical-align:middle}.forum .signature{border-top:solid 1px #ccc;padding-top:0;margin-top:10px;max-height:150px;overflow:auto}.forum .modified{margin:0;padding:0;color:#333;font-style:italic;font-size:12px}.forum .dropdown{background-color:#fffdfa;font-size:95%;margin-left:5px}.forum .footer,.forum .footer td,.forum .navbar,.forum .navbar td{font-size:12px;padding:8px 0;border:0;border-top:1px solid #808080}.forum .footer .rating-result{white-space:nowrap;margin-right:15px}.forum .nav-link{color:#333;padding:1px 4px}.forum .nav-link:hover{color:#fff !important;background-color:#f90;text-decoration:none}.forum .nav-link.selected{color:#f90;font-weight:bold}.forum .nav-link.selected:hover{color:#f90 !important;background-color:transparent}.forum .nav-link.disabled{color:#808080}.forum .nav-link.disabled:hover{color:#808080 !important;background-color:transparent}.root .subject-line td{font-weight:bold}.root td.subject-line{border-top:1px dotted #f90}.selected.content>td{background-color:#fff9e2 !important}.subject-line{border-bottom:1px solid #f2f2f2;background-color:transparent;overflow:hidden}.subject-line tr,.subject-line td{background-color:inherit}.subject-line .indent{vertical-align:top;text-align:right;padding:8px 0;background-color:#fff;position:relative}.subject-line .indent img{margin-right:4px}.subject-line .subject{vertical-align:top;text-align:left;padding:5px 0 7px 5px;font-size:14px}.subject-line .subject a{color:#005782}.subject-line .icon{vertical-align:top;width:20px;white-space:nowrap;padding:8px 0}.subject-line .author{vertical-align:top;text-align:left;width:140px;padding:8px 0 8px 2px;overflow:hidden}.subject-line .author a{color:#333;text-overflow:ellipsis;font-size:12px}.subject-line .date{vertical-align:top;text-align:right;width:130px !important;white-space:nowrap;padding:8px 0;color:#333;font-size:12px}.subject-line .count{vertical-align:top;text-align:right;width:30px !important;padding:5px 0}.content>td{border-bottom:1px solid transparent}.content td.text{padding:7px}.content td.text a{word-break:break-all}.content a{color:#005782}.content a.new-message{background-color:transparent;padding:3px !important}.content .footer:hover a{color:#069;-webkit-transition:color .1s linear;-moz-transition:color .1s linear;-o-transition:color .1s linear;transition:color .1s linear}.content .footer:hover td{color:#808080;-webkit-transition:color .1s linear;-moz-transition:color .1s linear;-o-transition:color .1s linear;transition:color .1s linear}.content .footer:hover a.new-message{background-color:#c53227;color:#fff !important}.content .indent{background-color:#fff}.content .footer,.content .footer td{color:#808080;background-color:transparent;padding:15px 0 3px 0;font-size:12px;border:0;line-height:24px}.content .footer a,.content .footer td a{color:#808080;border:solid 1px transparent;_border:solid 1px white;padding:1px}.content .footer a:hover,.content .footer td a:hover{border:solid 1px #f90;color:#069}.content img{max-width:100%;height:auto}.vote-hi,.vote-hi a{color:#006400 !important}.author-wrapper{position:relative;padding:0 0 0 200px;min-height:185px}.author-wrapper .pic-wrapper{position:absolute;left:0;top:5px}.author-wrapper .follow{padding-right:15px}.author-wrapper .profile-pic{border:1px solid #333;margin:0;padding:10px;-moz-box-shadow:3px 3px 5px 1px rgba(0,0,0,.2);-webkit-box-shadow:3px 3px 5px 1px rgba(0,0,0,.2);box-shadow:3px 3px 5px 1px rgba(0,0,0,.2)}.author-wrapper .description{padding:15px 15px 0 0}.author-wrapper .container-member .author{font-size:22px;color:#333}.author-wrapper .container-member .company{font-size:14px;color:#808080}.member-message{margin-left:30px}a.member-rep-box{padding:0 2px;margin:4px;text-align:center;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}a.member-rep-box.platinum{border:solid 2px #cfe7ff !important}.rating-container .rating-prompt{padding-right:5px;white-space:nowrap;line-height:25px;margin-right:2px;font-weight:bold;color:#808080}.rating-container:hover .rating-result.with-voting{display:none}.rating-container:hover .rating-vote{display:inline-block}.rating-container .rating-votes{margin-left:5px}.rating-container.large-stars{margin-left:7px}.rating-container.large-stars .rating-votes,.rating-container.large-stars .rating-prompt{line-height:25px}.rating-container .rating-vote .rating-star{cursor:pointer}.rating-container .rating-comment-wrap{top:12px !important;width:280px;position:relative;text-align:center}.rating-container .rating-comment{background-color:#fff;width:94%;margin:3px auto 0 auto;height:100px;border:1px solid #ccc;padding:0 5px}.rating-container .histogram{min-height:60px;display:block}.rating-vote a{cursor:pointer}.followed,.unfollowed{font-weight:bold;color:#555 !important;display:inline-block}.followed{background-color:#dedede !important;border:1px solid #f2f2f2;color:#a2a2a2 !important;font-weight:normal !important}.unfollowed{background-color:#79a9f2 !important;border:1px solid #ccc;color:#fff !important}@media(min-width:1024px){.desktop-only{display:inherit}.tablet-only{display:none}.mobile-only{display:none}.desktop-only.tablet-only{display:inherit !important}}@media(min-width:800px) and (max-width:1023px){.article-container-parts .article-container{max-width:100% !important}.article-container-parts .article-left-sidebar{display:none}.article-container-parts .article{margin:0 !important}}@media(min-width:757px) and (max-width:800px){.article-container-parts .article-container{max-width:100% !important}.article-container-parts .article-left-sidebar{display:none}.article-container-parts .article-right-sidebar{display:none}.article-container-parts .article{margin:0 !important}.article-container-parts .bottom-promo{display:none;overflow:hidden}.article-container-parts .bottom-promo .msg-728x90{position:absolute !important}}@media(max-width:756px){.article-container-parts .article-container{max-width:100% !important}.article-container-parts .article{margin:0 !important}.article-container-parts .article h1{margin-right:55px !important}.article-container-parts .article-left-sidebar{display:none}.article-container-parts .article-right-sidebar{display:none}.article-container-parts .bottom-promo{display:none}.author-wrapper{padding-left:0 !important;float:left !important}.author-wrapper .description{padding-top:15px;float:left}.author-wrapper .pic-wrapper{position:relative !important;left:0;top:0;margin:0 30px 20px 0;float:left}.author-wrapper .profile-pic{margin-left:0;width:auto;max-width:160px}}@media(min-width:769px){.tablet-only,.mobile-only{display:none}.tablet-only.desktop-only{display:inherit !important}}@media(min-width:576px) and (max-width:768px){.desktop-only{display:none}.tablet-only{display:inherit}.mobile-only{display:none}.desktop-only.tablet-only{display:inherit !important}.navmenu>li{margin:0 4px !important}.site-top-menu{position:relative !important}.site-top-menu .memberbar,.site-top-menu .memberbar a{height:auto;margin-bottom:5px}.site-top-menu .memberbar{padding:0 5px !important;margin:0 !important;line-height:25px}}@media(max-width:575px){.desktop-only{display:none !important}.tablet-only{display:none !important}.mobile-only{display:inherit !important}img{max-width:100%;height:auto}.article .share-list{width:100% !important}.forum .header2{display:none}.forum .subject-line td.author{width:1px}.forum .subject-line td.date{width:1px !important}.forum .subject-line .indent img{display:none}.forum .subject-line .icon img{display:none}.forum .subject-line .author span{display:none}.forum .subject-line .date span{display:none}.forum .subject-line .author{color:#808080;font-weight:bold}.forum .subject-line .date{font-size:inherit;width:auto;padding:0;margin-left:15px;color:#808080}.forum .hover-container:hover .button-group{display:none}.forum .searchbar .search{width:180px !important;font-size:14px !important}.forum .footer .last-visit{display:none}.article-nav{z-index:100;margin-top:10px !important;width:auto !important}.article-container{word-break:break-word;-ms-word-break:break-word}.navmenu>li{margin:0 4px !important}div.navbar{padding:5px 0}.notification-count{display:none}.container-breadcrumb{display:none}.container-content .edit-links{display:none}.site-top-menu{position:relative !important}.site-top-menu .memberbar,.site-top-menu .memberbar a{height:auto;margin-bottom:5px}.site-top-menu .memberbar{padding:0 5px !important;margin:0 !important;line-height:25px}.site-top-menu .memberbar .readlaterlist-dropdown{left:-129px}.author-wrapper .container-member{float:left}.site-header{margin-top:-22px !important;overflow:unset;height:132px}.site-header .main-content{position:absolute;left:0}.searchbar .search{width:100% !important}.admin-bar{margin-left:10px !important}.admin-bar img{margin-left:0 !important}.memberbar .tooltip-flyout{top:6px !important}.msg-728x90{display:none}.msg-300x250{display:none}.msg-160x600{display:none}}@media print{pre{overflow-x:auto;white-space:pre-wrap;white-space:-moz-pre-wrap !important;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}body,p,h1,h2,h3,h4,h5,li,tr,td{font-family:"Segoe UI",Arial,Sans-Serif;font-size:12px;line-height:1.4;color:#111}h1{font-size:27px;font-weight:200}h2{font-size:27px;font-weight:200}h3{font-size:19px;font-weight:normal}h4{font-size:16px}h5{font-size:14px;font-weight:bold}}.rrssb-buttons,.rrssb-buttons li,.rrssb-buttons li a{-moz-box-sizing:border-box;box-sizing:border-box}.clearfix{*zoom:1}.clearfix:after{clear:both}.clearfix:before,.clearfix:after{content:" ";display:table}.rrssb-buttons{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;height:40px;margin:0;padding:0;width:100%}.rrssb-buttons li{float:left;height:100%;list-style:none;margin:0;padding:0 2.5px;line-height:13px}.rrssb-buttons li.email a{background-color:#0a88ff}.rrssb-buttons li.email a:hover{background-color:#006ed6}.rrssb-buttons li.facebook a{background-color:#306199}.rrssb-buttons li.facebook a:hover{background-color:#244872}.rrssb-buttons li.linkedin a{background-color:#007bb6}.rrssb-buttons li.linkedin a:hover{background-color:#005983}.rrssb-buttons li.twitter a{background-color:#26c4f1}.rrssb-buttons li.twitter a:hover{background-color:#0eaad6}.rrssb-buttons li.reddit a{background-color:#8bbbe3}.rrssb-buttons li.reddit a:hover{background-color:#62a3d9}.rrssb-buttons li.pinterest a{background-color:#b81621}.rrssb-buttons li.pinterest a:hover{background-color:#8a1119}.rrssb-buttons li.compact{padding:0 4.5px}.rrssb-buttons li.compact a{border-radius:50%;padding:0 7px 0 32px}.rrssb-buttons li.compact a .icon{left:7px;top:-3px;width:5%;transform:scale(.85)}.rrssb-buttons li.compact a .icon svg{height:auto;width:auto}.rrssb-buttons li a{background-color:#ccc;border-radius:3px;display:block;font-size:11px;font-weight:bold;height:100%;padding:11px 7px 12px 27px;position:relative;text-align:center;text-decoration:none;text-transform:uppercase;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;width:100%;-webkit-transition:background-color .2s ease-in-out;-moz-transition:background-color .2s ease-in-out;-o-transition:background-color .2s ease-in-out;transition:background-color .2s ease-in-out}.rrssb-buttons li a .icon{display:block;height:100%;left:10px;padding-top:9px;position:absolute;top:0;width:10%}.rrssb-buttons li a .icon svg{height:17px;width:17px}.rrssb-buttons li a .icon svg path{fill:#fff}.rrssb-buttons li a:active{box-shadow:inset 1px 3px 15px 0 rgba(22,0,0,.25)}}.cc-window{opacity:1;background-color:#f90}.cc-window.cc-invisible{opacity:0}.cc-animate.cc-revoke.cc-top{transform:translateY(-2em)}.cc-animate.cc-revoke.cc-bottom{transform:translateY(2em)}.cc-animate.cc-revoke.cc-active.cc-top{transform:translateY(0)}.cc-animate.cc-revoke.cc-active.cc-bottom{transform:translateY(0)}.cc-revoke:hover{transform:translateY(0)}.cc-grower{max-height:0;overflow:hidden;-webkit-transition:max-height .25s;-moz-transition:max-height .25s;-ms-transition:max-height .25s;-o-transition:max-height .25s;transition:max-height .25s}.cc-window,.cc-revoke{position:fixed;overflow:hidden;box-sizing:border-box;font-family:"Segoe UI",Arial,Sans-Serif;font-size:13px;line-height:1.5em;display:flex;flex-wrap:nowrap;z-index:9999}.cc-window.cc-static{position:static}.cc-window.cc-floating{padding:2em;max-width:24em;flex-direction:column}.cc-window.cc-banner{padding:.7em 1.8em;width:100%;flex-direction:row}.cc-revoke{padding:.5em}.cc-revoke:hover{text-decoration:underline}.cc-header{font-size:18px;font-weight:bold}.cc-btn,.cc-link,.cc-close,.cc-revoke{cursor:pointer}.cc-link{opacity:.8;display:inline-block;padding:.2em;text-decoration:underline}.cc-link:hover{opacity:1}.cc-link:active,.cc-link:visited{color:initial}.cc-btn{display:block;padding:.4em .8em;font-size:.9em;font-weight:bold;border-width:2px;border-style:solid;text-align:center;white-space:nowrap}.cc-banner .cc-btn:last-child{min-width:110px;margin-left:10px}.cc-highlight .cc-btn:first-child{background-color:transparent;border-color:transparent}.cc-highlight .cc-btn:first-child:hover,.cc-highlight .cc-btn:first-child:focus{background-color:transparent;text-decoration:underline}.cc-close{display:block;position:absolute;top:.5em;right:.5em;font-size:1.6em;opacity:.9;line-height:.75}.cc-close:hover,.cc-close:focus{opacity:1}.cc-revoke.cc-top{top:0;left:3em;border-bottom-left-radius:.5em;border-bottom-right-radius:.5em}.cc-revoke.cc-bottom{bottom:0;left:3em;border-top-left-radius:.5em;border-top-right-radius:.5em}.cc-revoke.cc-left{left:3em;right:unset}.cc-revoke.cc-right{right:3em;left:unset}.cc-top{top:1em}.cc-left{left:1em}.cc-right{right:1em}.cc-bottom{bottom:1em}.cc-floating>.cc-link{margin-bottom:1em}.cc-floating .cc-message{display:block;margin-bottom:1em}.cc-window.cc-floating .cc-compliance{flex:1 0 auto}.cc-window.cc-banner{align-items:center}.cc-banner.cc-top{left:0;right:0;top:0}.cc-banner.cc-bottom{left:0;right:0;bottom:0}.cc-banner .cc-message{flex:1}.cc-compliance{display:flex;align-items:center;align-content:space-between}.cc-compliance>.cc-btn{flex:1}.cc-btn+.cc-btn{margin-left:.5em}@media print{.cc-window,.cc-revoke{display:none}}@media screen and (max-width:900px){.cc-btn{white-space:normal}}@media screen and (max-width:414px) and (orientation:portrait),screen and (max-width:736px) and (orientation:landscape){.cc-window.cc-top{top:0}.cc-window.cc-bottom{bottom:0}.cc-window.cc-banner,.cc-window.cc-right,.cc-window.cc-left{left:0;right:0}.cc-window.cc-banner{flex-direction:column}.cc-window.cc-banner .cc-compliance{flex:1}.cc-window.cc-floating{max-width:none}.cc-window .cc-message{margin-bottom:1em}.cc-window.cc-banner{align-items:unset}}
+</style>
+<link rel="stylesheet" type="text/css" href="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/Main.min.css" media="all" onload="if(media!=&#39;all&#39;)media=&#39;all&#39;">
+<noscript><link rel="stylesheet" type="text/css" href="https://codeproject.freetls.fastly.net/App_Themes/CodeProject/Css/Main.min.css?dt=2.8.20210224.2"></noscript>
+
+
+    <script type="text/javascript" async="" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/analytics.js.download"></script><script type="text/javascript" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/jquery.min.js.download" defer=""></script>
+<script type="text/javascript" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/article.min.js.download" defer=""></script>
+<script type="text/javascript" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/MemberProfilePopup.min.js.download" defer=""></script>
+
+	
+<meta http-equiv="content-language" content="en-US">
+
+<meta name="Description" content="The goal of this series to start with basic of MEAN stack development and cover all the concept that are required for MEAN stack development and finish with a web application that is completely written in JavaScript technologies.">
+<meta name="Keywords" content="Javascript, CSS, HTML, MongoDB, bootstrap, Typescript, Node.js, AngularJs,Client side scripting,Web Development,Free source code, tutorials">
+<meta name="Author" content="Pankaj Kumar  Choudhary">
+<meta name="Rating" content="General">
+<meta name="Revisit-After" content="1 days">
+<meta name="application-name" content="CodeProject">
+<meta name="google-translate-customization" content="d908bb7ce7aff658-4c2f3a504525c916-g629383f736781a8a-13">
+
+<link rel="dns-prefetch" href="https://ajax.googleapis.com/"> 
+<link rel="canonical" href="https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part">
+<meta name="twitter: card" content="summary">
+<meta name="twitter: site" content="@CodeProject">
+<meta name="twitter: creator" content="@pankajmalhan30">
+<meta property="og:url" content="https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part">
+<meta property="og:title" content="Build Modern App with MEAN Stack 2.0– Part 1">
+<meta property="og:description" content="The goal of this series to start with basic of MEAN stack development and cover all the concept that are required for MEAN stack development and finish with a web application that is completely written in JavaScript technologies.">
+
+<link rel="alternate" type="application/rss+xml" title="CodeProject Latest articles - All Topics" href="https://www.codeproject.com/WebServices/ArticleRSS.aspx?cat=1">
+<link rel="alternate" type="application/rss+xml" title="CodeProject Latest articles - Artificial Intelligence" href="https://www.codeproject.com/WebServices/ArticleRSS.aspx?cat=31">
+<link rel="alternate" type="application/rss+xml" title="CodeProject Lounge Postings" href="https://www.codeproject.com/webservices/LoungeRSS.aspx">
+<meta name="robots" content="index, follow">
+<link rel="search" type="application/opensearchdescription+xml" title="CodeProject" href="https://www.codeproject.com/info/OpenSearch.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.codeproject.com/favicon/apple-touch-icon.png"> 
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.codeproject.com/favicon/favicon-32x32.png"> 
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.codeproject.com/favicon/favicon-16x16.png"> 
+<link rel="manifest" href="https://www.codeproject.com/favicon/manifest.json"> 
+<link rel="mask-icon" href="https://www.codeproject.com/favicon/safari-pinned-tab.svg" color="#ff9900">
+	<script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "TechArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part"
+   },
+  "name": "Build Modern App with MEAN Stack 2.0– Part 1",
+  "headline": "Build Modern App with MEAN Stack 2.0– Part 1",
+  "url": "https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part",
+  "discussionUrl": "https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part#_comments",
+  "isFamilyFriendly": "true",
+  "image": "https://codeproject.global.ssl.fastly.net/App_Themes/CodeProject/Img/Article100.png",
+  "keywords": "Javascript,CSS,HTML,MongoDB,bootstrap,Typescript,Node.js,AngularJs",
+  "commentCount": "6",
+  "editor" : {
+    "@type" : "Person",
+    "name" : "Pankaj Kumar  Choudhary",
+    "url" : "https://www.codeproject.com/script/Membership/View.aspx?mid=10842643"
+  },
+  "license": "http://www.codeproject.com/info/cpol10.aspx",
+  "publisher" : {
+    "@type" : "Organization",
+    "name" : "CodeProject"
+  },
+  "description": "The goal of this series to start with basic of MEAN stack development and cover all the concept that are required for MEAN stack development and finish with a web application that is completely written in JavaScript technologies.",
+  "articleSection": "Client side scripting",
+  "author" : [{
+      "@type" : "Person",
+      "name" : "Pankaj Kumar  Choudhary",
+      "url" : "https://www.codeproject.com/script/Membership/View.aspx?mid=10842643"
+    }],
+  "datePublished": "2017-05-03",
+  "dateCreated": "2017-05-03",
+  "dateModified": "2017-05-03"
+,
+  "aggregateRating" : {
+    "@type" : "AggregateRating",
+    "ratingValue" : 5.00,
+    "ratingCount" : 4,
+    "bestRating" : 5,
+    "worstRating" : 1
+  }
+}</script>
+
+<script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item" : {
+      "@id" : "/Chapters/2/Web-Development",
+      "name" : "Web Development"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "item" : {
+      "@id" : "/KB/scripting/",
+      "name" : "Client side scripting"
+    }
+  }]
+}</script>
+
+
+	<!--<base target="_top">--><base href="." target="_top">
+	
+    
+
+
+<script type="text/javascript">
+function defrm () { /* thanks twitter */
+    document.write = '';
+    window.top.location = window.self.location;
+    setTimeout(function() { document.body.innerHTML = ''; }, 0);
+    window.self.onload = function(evt) { document.body.innerHTML = ''; };
+}
+
+if (window.top !== window.self) {
+    try {
+        if (window.top.location.host) { /* will throw for all except chrome */ }
+        else { defrm(); /* chrome */ }
+    } catch (ex) { defrm(); /* everyone else */ }
+}
+
+// Specific case where a site is screwing with us.
+if (typeof(DemoUrl) !== 'undefined') {
+    document.write(unescape('%3Cme') + 'ta http' + '-equiv="re' + 'fresh con' +
+                           'tent="1;url=' + DemoUrl + unescape('"%3CE'));
+}
+</script>
+	
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" type="text/javascript" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/js"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-1735123-1' , {'user_id': '7ddc6b82-53a5-458e-8a91-1eaafd12ddf0'});
+    </script>
+
+
+<style type="text/css"></style><style></style></head>	
+
+<body class="chrome chrome88" data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed=""><div class="cc-revoke cc-bottom cc-animate cc-color-override--316233370   " style="display: none;">Cookie Policy</div><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-opt-in-out cc-theme-edgeless cc-bottom cc-color-override--316233370 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">Like every other website we use cookies. By using our site you acknowledge that you have read and understand our <a href="https://www.codeproject.com/info/cookie.aspx">Cookie Policy</a>, <a href="https://www.codeproject.com/info/privacy.aspx">Privacy Policy</a>, and our <a href="https://www.codeproject.com/info/TermsOfUse.aspx">Terms of Service</a>. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.codeproject.com/info/privacy.aspx" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span><div class="cc-compliance cc-highlight"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Ask me later</a><a aria-label="deny cookies" role="button" tabindex="0" class="cc-btn cc-deny">Decline</a><a aria-label="allow cookies" role="button" tabindex="0" class="cc-btn cc-allow">Allow cookies</a></div><!--googleon: all--></div>
+
+<a class="access-link" href="https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part?display=Print#Main"><img alt="Click here to Skip to main content" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/t.gif"></a>
+
+
+
+
+<div class="page-background">
+
+	
+	
+
+	
+
+	
+    <div id="ctl00_STM" class="site-top-menu fluid">
+        <div class="main-content">
+            
+        </div>
+    </div>
+
+	
+    <div id="ctl00_SH" class="site-header fluid">
+        <div class="main-content">
+            <div class="logo"><a href="https://www.codeproject.com/"><img id="ctl00_Logo" tabindex="1" title="CodeProject" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/logo250x135.gif" alt="Home" style="height:135px;width:250px;border-width:0px;"></a></div>
+            <div class="promo"></div>
+        </div>
+    </div>
+
+	
+			
+	
+
+	<div id="A" class="container-content-wrap fluid print"> 
+
+	<div class="container-content">
+
+        
+		<div class="clearfix">
+			<div class="container-breadcrumb float-left ">
+				<div><a rel="nofollow" href="https://www.codeproject.com/script/Content/SiteMap.aspx">Articles</a> » <a rel="nofollow" href="https://www.codeproject.com/Chapters/2/Web-Development">Web Development</a> » <a rel="nofollow" href="https://www.codeproject.com/KB/scripting/">Client side scripting</a> » <a rel="nofollow" href="https://www.codeproject.com/KB/scripting/#General">General</a></div>
+			</div>
+
+            <div class="float-left">
+				
+			</div>
+
+			<div class="edit-links float-right">
+				
+			</div>
+
+			<div class="article-nav float-right">
+				
+			</div>
+		</div>
+
+        
+		<div class="extended article-container-parts">
+
+			
+		    
+            
+
+			
+			<div id="AT" class="article-container  fluid tight"> 
+
+				<div class="article">
+
+					<form name="aspnetForm" method="post" action="https://www.codeproject.com/Articles/1185294/View.aspx?display=Print" id="aspnetForm" style="margin:0;padding:0">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="V1zKWuRxhtFz25nflro32dfFZGk4/K3xsOotZBgM0Gui4rTG5Jb1WMgP1B/YOlOTn7qENoCnpxRr5eqNwmxPiqy3kKg8s3mW4ozfCjukQkNLA+j0GORuAGi5K3a9DZ+5MKflYZI9CQooB7n0dzPdwV/fP4d9Bl6wJGKdwdjnc12+zsRzIVzgAT2Mu3559q8Ad015LxMeYiimNmq48d1Byy1jHJl86/iFSTlmeJW3phyasr6zpLCpVMWaS63Y71kOGaFBnYr+azIDWdV2C3Wa+8qrqVE3uir2f0zEcf/X0cjdY5QqPxUmN7yrxDQzl6kcvMbKVXb/4qXnQa92mE760PjnQgkUO3/WBrjtrafIKo2p3Vuk7Tl97TbPFeSnJUoxHr36bSvabn0I55a5zT8Evu8rUD5y2tEp9F2OftshoOJbfBePUmX7K0QuZPZl0WFQ7zOpfdcNdh4sMBVGF8uUoNi+4OAfNvCZ6LudP4qd7n7xm0d3VrW3+0DohFjVYx2vqbpbHgd0F9k71FhHdgc4UPNwl9NHZsFgzo6tXbQNWTBQzdo3tD8DXQKfPEmG3szc0bSKXcV4mI4sdbmkCuRJBz0H5CjFP5W8hX+113tn9BZHll/VuAQFNuKwIsY08Yuo73kxZrcGm3YBQq6ov5FRrx5flqJrIjx0HlMes5O3EfCUSc+Le0PFYq5tqK+Rvlcd6xty+KXYNaAEREooK6MzfOwgcJGSVDCP7cRrzmzIV9RlGn7coiBxsbM/MSXRUPo2mSJKPYEC9D/qQORAXCNs+gjo1VzATzD1w1JNKgm7xHayS9rgoE3Oo0gOT5ZvOAVfzCx19zc8KRezqNW0JcZ9yuvOhGm+0CtPC36M/SS5Cx9nql7/HJjkwefWVSeDtlXz4k5opcvKqOZZ4dUpVDw4EGiffRmNRwisRSZ+Yu3slAYAduxdlCJEVX1iLiXDKb6XZWtUnch1P9dSyHvlwFDsr26pvfAdzL4n6aRcoaIlQwE3wOEV9VM3ZsTTEJHZMvJm37wzVxTP8YPeAeH0W1jbOD+7b1j8p0jUWQbjt+kp5iULx1Rb4kzKTqYaMV1Pge4EYf6ePNDEiMkifjitGCyQ7lU0sd6G7tBCyXGvI0TJHxi+FUz71lTcMnOSr5uzW3+kzVQpzsAdbOxZ/jFYbnsI0qb/ORUBCvK0rLf+IeOwsPglYlG9fCRAxX4N8fyW0UMpdTJE52pQx9SHgmZMV5suF6X8QxxY8KrTYoaiwJ6naA/ASgSWKjq03EzlC+6LqAH8OhzivKkFWpIKlw44tSApOgEZbCuBMalmSzrFX9zrFtHHLPNSaWtapUpVfb4RXt6E20wVxY3FnPMPdxg2MIVpUFM4DIelSbyWj3/8fUERkzBWHgpwXVMQaYl218978ut7V80in/yuJRy9lHAS4AmRvbbgAEBGchXn8I6QIlWQxJcALXDC5Q5lonY/dECN1wf8uPriI2F2zUbLpKxvuOxa6lQXANubUMGj63lo0BixI87epvkDUt2yH0lVGRisPyago5HEq1yZ38JfPwTTyeN9cyd1QV6XgSPbrtL+iY7yhdo7IbjZI1UvjVu5G3ko0GsdBXPlO8WgWtpvpg0/gFz3BPZ7wNo61orHyTyGHSXlJFdWa+dLQqWEkK7375O3/J4dikhT8YB1HkGAwuvvt132bGQs3NHlO4kdC4CEcL2zV19g2xzVXL0irkmZkKbU4LUjjex8tLIoJahM6q89HSpYMfIErQ/i6nesfA0U3GXUGCGNCvVqNPUtPZ2VfKEdySsEUWY9eUPc+eWoasbCAea1DP3LQTi6sXs8oXorsS6kPQfXiGNFgdOOuNB1NyZt9MJPU5F9csEil6O1roNBSvQ6mGicZgx/BKfPqwmi30VtAHutYjVcUCjS4Cnd2FBQNuMHwywRCTcwdulSyx1sr4XKNSHuNOyoXv1vSkqt9CZWo0qz9UJBV6s55cBm59l6DfyacqysSJhsExIDML/oYEnemPrnjHTB9gOfgmCZ9LR4ZzfVS0OWmiWTX1CJrV/ghLhRs993EMSn73GFzyqx6pNUEJ2UfJdhJKrj6Jo+z6lw5wRrH9ye615Ch/baPBEuM4tY9Q4cgVpv9ebA0D4+/D1tyM+4PcPthKTpUsUyAsP3u05zJgblmYc+7L0bi1pJRIt7nzEKe5Ox0t0OHLs5Iqc9GZa75IUptiEJ0FuZR1tN48eNIkv1xGGrB29agmcr6U55s0q51Q==">
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="10C1FD69">
+</div>
+
+					
+					 
+					<div class="header">
+					    <a name="Main"></a>
+
+					    
+					    <a name="_articleTop" id="_articleTop"></a>
+					    <div class="title">
+					        <h1 id="ctl00_ArticleTitle">Build Modern App with MEAN Stack 2.0– Part 1</h1>
+					    </div>
+
+                        <div>
+					        
+					        <div class="entry flex-container">
+
+                                <img src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/{d8bedc9d-379c-4598-a4ad-2bd85a6f7fc7}.png" id="ctl00_avatar" class="avatar">
+
+                                <div class="flex-item" style="flex:1 1 auto">
+                                    <div class="flex-container" style="justify-content:space-between;flex-wrap:wrap-reverse">
+                                       <span id="ctl00_Authors" class="author flex-item"><a href="https://www.codeproject.com/script/Membership/View.aspx?mid=10842643" rel="author">Pankaj Kumar  Choudhary</a></span> 
+
+                                        <div class="flex-item" style="margin-top:-4px;">
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-container">
+                                        <span id="ctl00_LastUpdated" class="date flex-item-tight" title="Date last updated">3 May 2017</span><a id="ctl00_LicenseLink" title="The Code Project Open License (CPOL)" class="license flex-item-tight" href="http://www.codeproject.com/info/cpol10.aspx">CPOL</a>
+                                    </div>
+                                </div>
+					        </div>
+
+                            
+
+                        </div>
+
+                        <div id="ctl00_DescriptionSpot" class="summary">The goal of this series to start with basic of MEAN stack development and cover all the concept that are required for MEAN stack development and finish with a web application that is completely written in JavaScript technologies.</div><span id="ctl00_ThumbnailUrl" class="date" content="https://codeproject.global.ssl.fastly.net/script/Articles/Images/article100x80.png"></span>			
+
+                    </div>
+                    
+					
+					
+
+					
+
+					
+					
+
+					
+					
+					
+					
+
+						
+					
+
+					
+
+						
+						<div id="contentdiv" class="text">
+						
+
+
+
+<p>In starting phase of JavaScript, JavaScript was only limited to the client side part of the application. We used JavaScript to handle events at client side. But last few years everything has changed, now JavaScript not used only for handle the events at client side now it is used at each phase of a software and application development for example at database level, server level etc. We can build an application that is completely written on JavaScript technologies from front end to backend and also at database level. MEAN stack application are the example of this. MEAN is an acronym for MongoDB, ExpressJS, AngularJS and Node.js. In MEAN stack we use Angular for front end, Node for server and Express as upper layer of Node and MongoDB for the database.<br>
+<br>
+<img height="264px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image001.png" width="628px" alt="Image 1" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image001-r-400.png 400w, /KB/scripting/1185294/image001.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image001-r-400.png 400w, /KB/scripting/1185294/image001.png 628w"></p>
+
+<p>MEAN stack application is combination of 4 JavaScript technologies.</p>
+
+<h2>MongoDB</h2>
+
+<p>In MEAN stack "M" represents to MongoDB, MOngoDB is an open source NoSQL database that uses a document-oriented data model. In MongoDB instead of storing data in relational format like table we store data into JSON formatted.</p>
+
+<h2>ExpressJS</h2>
+
+<p>In MEAN stack "E" stands for ExpressJS, Express.js is a Node.js framework and allows JavaScript to be used outside the Web Browsers, for creating web and network applications. This means we can create the server and server-side code for an application like most of the other web languages.</p>
+
+<h2>AngularJS</h2>
+
+<p>In MEAN stack "A" stand for AngularJS, Angular is a structural framework for dynamic web apps. We use HTML as your template language and using Angular extend HTML's syntax. Latest version of Angular is 2.0 . Angular 2.0 is completely written and now it is component based. In MEAN stack 1.0 we use Angular 1.x version and for MEAN stack 2.0 we use Angular 2.0. In this series we will use Angular 2.0 for front end of application.</p>
+
+<h2>Node.js</h2>
+
+<p>In MEAN stack "N" stand for the Node.js, Node.js provide open source and cross-platform runtime environment for developing server side application. Node.js provide a platform to develop an event-driven, non-blocking I/O lightweight and efficient application.</p>
+
+<p>Object of this series to provide a step by step instruction to setup the environment for MEAN stack 2.0 application and provide a deep knowledge of how MEAN stack application works.</p>
+
+<h2>What will we learn from this series</h2>
+
+<p>The goal of this series to start with basic of MEAN stack development and cover all the concept that are required for MEAN stack development and finish with a web application that is completely written in JavaScript technologies. In this series we will create "Employee Management System(EMS)", in EMS system we can manage the employee level information like project that are undertaken by employee and employee’s basic details.</p>
+
+<p>We will cover following topic in this series.</p>
+
+<ul>
+	<li>Initial setup with Node.js</li>	<li>Add express and make the API</li>	<li>Setup database with MongoDB</li>	<li>Setup front-end with Angular2</li>	<li>Add a new employee entry</li>	<li>View list of all employees.</li>	<li>Edit the details of an existing employee</li>	<li>Delete an existing employee</li>	<li>Add filter and search functionality</li>	<li>Add Sorting functionality</li>	<li>Conclusion</li></ul>
+
+<h2>Pre Requests</h2>
+
+<ul>
+	<li>Basic knowledge of Angular2, MongoDB, Node.js and Express.js. If you are fresher to all these terms then I prefer you first take a tour to all these technologies.</li>	<li>Pre installation of NPM. If NPM is not configured in your system then first install <a href="https://nodejs.org/en/">NodeJS</a>.</li>	<li>Install the <a href="https://code.visualstudio.com/">Visual Studio Code</a> for the IDE, you can use any IDE but I will recommended you to use the Visual Studio Code, it makes the development easy.</li></ul>
+
+<h2>Application Setup</h2>
+
+<p>Now we setup development environment for our application. First of all we create server using the Node.js and Express and after that using the Angular2 we create the front end of application and use the MongoDB as our database.</p>
+
+<p>First of all create a folder anywhere in your system where you like and named this folder as "MeanStack2", now open this in Visual Studio Code. Now go to "View" tab and click on "Integrated Terminal". After open the Integrated Terminal, now follow the below steps to the application.</p>
+
+<h2>Step 1: Create Package.json file</h2>
+
+<p>In your integrated terminal paste "npm init" command and press the enter. This command will create the "<em>package.json</em>" file for Node.js application. When you run this command, it will ask you to enter some information like name, version, license etc. Point to consider that, it will ask you about the "entry point" of application, for "entry point" write the "<em>server.js</em>" instead of "<em>index.js</em>", for other fields you can enter any information that you want.</p>
+
+<p><img height="556px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image002.png" width="628px" alt="Image 2" data-src="/KB/scripting/1185294/image002.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image002-r-400.png 400w, /KB/scripting/1185294/image002.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image002-r-400.png 400w, /KB/scripting/1185294/image002.png 628w"></p>
+
+<p>After completing this step you can see that a "<em>package.json</em>" file has been created and this file contain the information that we enter in "Integrated Terminal".</p>
+
+<p><img height="255px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image003.png" width="628px" alt="Image 3" data-src="/KB/scripting/1185294/image003.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image003-r-400.png 400w, /KB/scripting/1185294/image003.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image003-r-400.png 400w, /KB/scripting/1185294/image003.png 628w"></p>
+
+<h2>Step 2: Add express and other dependencies</h2>
+
+<p>For the Node.js server setup we require the some packages for express as upper layer of Node.js, ejs as template engine and body-parser to parse the request body. So paste "npm install express body-parser ejs –save" command in your integrated terminal and press enter, this command add three packages in "node_modules" folder and also add the dependency in your "package.json" file.</p>
+
+<p><img height="332px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image004.png" width="628px" alt="Image 4" data-src="/KB/scripting/1185294/image004.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image004-r-400.png 400w, /KB/scripting/1185294/image004.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image004-r-400.png 400w, /KB/scripting/1185294/image004.png 628w"></p>
+
+<h2>Step 3: Add "server.js" file</h2>
+
+<p>As we defined in our "<em>package.json</em>" file that "<em>server.js</em>" file is the entry point of our application, so add the "<em>server.js</em>" file in root directory of application and paste the following code into this file.</p>
+
+<pre>var express=require('express');
+var path=require('path');
+var bodyParser=require('body-parser');
+
+// In above three line we import the required packages 
+
+var index=require('./routes/index');
+var api=require('./routes/api');
+
+// index and api object contain the path of routing files for our application
+
+var port=4500;
+var app=express();
+
+//Define the port and create an object of express class
+
+app.set('view engine','ejs');
+app.set('views',path.join(__dirname,'/client/views'));
+
+// define the view engine and set the path for views files
+
+app.engine('html',require('ejs').renderFile);
+//Register given template engine callbac function as extension
+
+app.use(express.static(path.join(__dirname,'/client')));
+
+// Defien the path for the static files like image, css and js files
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
+// Define the middleware to parse the data from URL request and requesy body
+
+app.use('/',index);
+app.use('/api',api);
+app.use('*',index);
+// define the middleware for routing
+
+app.listen(port,function(){
+    console.log('Server Started At '+port);
+})
+// Run the Node.js server at 4500 port</pre>
+
+<p>In above lines of code we create a server and set all the middle-ware and other required dependencies and later we run this server on "4500" port. In first three line of code we import the require modules to setup the server. In next line we import "index" and "api" files. Actually in these two files we implement the routing for our application. Later we set the "ejs" as template view engine for our application and set the path of our template pages. Using the "express.static" middle-ware function we define the path for the static files images, js and css files.</p>
+
+<pre>app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));</pre>
+
+<p>In these two lines of code we set the bodyParser and urlencoded middle-ware. The "<code>bodyParser</code>" middle-are is used to get the data from request body like POST, PUT and DELETE type request. The "urlEncoded" middle-ware is used to get the data from URL of the request.</p>
+
+<pre>app.use('/',index);
+app.use('/api',api);
+app.use('*',index);</pre>
+
+<p>In above line of code we set the middle-ware for the "/" and "api" and requests. It is means if request is home page then it will be handle by code written in "<em>index.js</em>" and if request is related to the "api" then it will handled by code written in "<em>api.js</em>’ file. We also define the default routing, in case of default it will be handle by the "index.js" file.</p>
+
+<pre>app.listen(port,function(){ 
+    console.log('Server Started At '+port);
+})</pre>
+
+<p>In above line of code we set the server and this server will listen to the "4500" port number.</p>
+
+<h2>Step 4: Add routing files</h2>
+
+<p>Now add the "<em>route</em>" folder to the root directory of the of application, after creating the "route" folder now add "index.js" file and paste the following code into this file.</p>
+
+<pre>var express=require('express');
+var router=express.Router();
+
+router.get('/',function(req,resp,next){
+    resp.render('index.html');
+});
+
+module.exports=router;</pre>
+
+<p>In above line of code we perform the routing, if request is get type then we will render the user to "<em>index.html</em>" page that is present in "<em>client/views</em>" folder. After creating the "<em>index.js</em>" page now add another page and named this page as "<em>api.js</em>", and paste the following code into this file.</p>
+
+<pre>var express=require('express');
+var router=express.Router();
+
+router.get('/',function(req,resp,next){
+    resp.send('this is api data');
+});
+
+module.exports=router;</pre>
+
+<p>In above code we are sending a simple text message response to the request.</p>
+
+<h2>Step 5: Add Client folder</h2>
+
+<p>Now add a "<em>client</em>" folder in your application root, this folder will contain all the client side related code. After creating this file now add another folder in "<em>client</em>" folder and named this folder as "views". In "<em>views</em>" folder we will create our index.html and Angular2 related code and files. After adding the "<em>client</em>" and "<em>views</em>" folder now add "<em>index.html</em>" file in "<em>views</em>" folder and page the following code into this file.</p>
+
+<pre lang="html" data-lang-orig="html"><span class="code-keyword">&lt;</span><span class="code-leadattribute">html</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">head</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/head</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">body</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">h2</span><span class="code-keyword">&gt;</span>This is Mean Stack2 Application.<span class="code-keyword">&lt;</span><span class="code-leadattribute">/h2</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/body</span><span class="code-keyword">&gt;</span>
+<span class="code-keyword">&lt;</span><span class="code-leadattribute">/html</span><span class="code-keyword">&gt;</span></pre>
+
+<p>Till now we perform all the basic required configuration to run the server and check the client application. Let’s check the structure of our application. Following will be the structure of our application.</p>
+
+<p><img height="332px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image005.png" width="628px" alt="Image 5" data-src="/KB/scripting/1185294/image005.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image005-r-400.png 400w, /KB/scripting/1185294/image005.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image005-r-400.png 400w, /KB/scripting/1185294/image005.png 628w"></p>
+
+<h2>Step 6: Install the Nodemon</h2>
+
+<p>We can run any node.js file using the "node" command but if we make any changes in our files then we need to restart our server again and again that takes a lot of time. To overcome this scenario we can add the "nodemon", nodemon will watch the files in the directory in which nodemon was started, and if any files change, nodemon will automatically restart your node application. to add the "nodemon" package open your command line terminal and paste the "npm install –g nodemon" line of code and press the enter.</p>
+
+<h2>Step 7: Run the application</h2>
+
+<p>After adding the "nodemon" now go to "Integrated Terminal" of Visual Studio Code and run the "nodemon sever" command. After run this command if you get below screen that means everything configured very well.</p>
+
+<p><img height="176px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image006.png" width="550px" alt="Image 6" data-src="/KB/scripting/1185294/image006.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image006-r-400.png 400w, /KB/scripting/1185294/image006.png 550w" sizes="550px" srcset="/KB/scripting/1185294/image006-r-400.png 400w, /KB/scripting/1185294/image006.png 550w"></p>
+
+<p>Now open your browser and paste the "localhost:4500" URL and hit enter. When press the enter and everything is configured properly then you will get this screen.</p>
+
+<p><img height="149px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image007.png" width="452px" alt="Image 7" data-src="/KB/scripting/1185294/image007.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image007-r-400.png 400w, /KB/scripting/1185294/image007.png 452w" sizes="452px" srcset="/KB/scripting/1185294/image007-r-400.png 400w, /KB/scripting/1185294/image007.png 452w"></p>
+
+<p>If you are not getting this screen that means something is going wrong with your code and try to find and resolve that issue. Now we create a database and establish the a connection with this database using the "mongoose" library.</p>
+
+<h2>Step 8: Create database and establish the connection with database</h2>
+
+<p>If you have installed the "MongoDB" then open a command prompt window and run the "mongod" command, this command run the "MongoDB" server at "27017" port and ready to connection with a client.</p>
+
+<p><img height="369px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image008.png" width="628px" alt="Image 8" data-src="/KB/scripting/1185294/image008.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image008-r-400.png 400w, /KB/scripting/1185294/image008.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image008-r-400.png 400w, /KB/scripting/1185294/image008.png 628w"></p>
+
+<p>After starting the sever now we run a client and create a new database. Now open another command prompt window and run the "mongo" command, this command create a client and establish the connection to server running at port "27017".</p>
+
+<p><img height="225px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image009.png" width="628px" alt="Image 9" data-src="/KB/scripting/1185294/image009.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image009-r-400.png 400w, /KB/scripting/1185294/image009.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image009-r-400.png 400w, /KB/scripting/1185294/image009.png 628w"></p>
+
+<p>After creating the connection to server now "<code>use employeeDetails</code>" command, this command create a new database (employeeDetails) and switched to this new database.</p>
+
+<p>Now paste the following code into client command prompt and press the enter.</p>
+
+<pre>db.employees.insert([{"EmployeeName":"Ankur Verma","Designation":"Mobile Developer","Project":"OUP","Skills":"Java, Android Studio, Xamarin"},{"EmployeeName":"Dheeraj Sharma","Designation":" Developer","Project":"Lion Servcies","Skills":"C#,Asp.Net,MVC,AngularJS"},
+{"EmployeeName":"Dhramveer","Designation":" Developer","Project":"VMesh","Skills":"C#,Asp.Net,MVC,AngularJS"},
+{"EmployeeName":"Prakash","Designation":" Web Developer","Project":"OUP","Skills":"C#,Asp.Net,MVC,AngularJS"},
+{"EmployeeName":"Raj Kumar","Designation":"Developer","Project":"CNS","Skills":"C#,Asp.Net,MVC"}])</pre>
+
+<p><img height="209px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image010.png" width="628px" alt="Image 10" data-src="/KB/scripting/1185294/image010.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image010-r-400.png 400w, /KB/scripting/1185294/image010.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image010-r-400.png 400w, /KB/scripting/1185294/image010.png 628w"></p>
+
+<p>Above code create a new collection in our database and insert some data into this collections. After inserting some default data into "employees" collection’ let’s check the data that we entered. To get the data from a collection we run the "find" command.</p>
+
+<p>Now paste "<code>db.employees.find().pretty()</code>" command and press the enter. When you run this command it will show all the data of "employees" collection.</p>
+
+<p><img height="629px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image011.png" width="479px" alt="Image 11" data-src="/KB/scripting/1185294/image011.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image011-r-400.png 400w, /KB/scripting/1185294/image011.png 479w" sizes="479px" srcset="/KB/scripting/1185294/image011-r-400.png 400w, /KB/scripting/1185294/image011.png 479w"></p>
+
+<p>Now our database is ready let’s create model classes and make a connections to this database.</p>
+
+<h2>Step 9: Install Mongoose and make connection to the database</h2>
+
+<p>Now open "Integrated Terminal" of Visual Studio Code and run the "npm install mongoose --save" command, this command will install the dependencies for the mongoose. In this project we are going to use the "mongoose" for MongoDB CRUD operation. The mongoose is an object modeling package for Node that essentially works like an ORM that you would see in other languages (Entity framework for C#). Using Mongoose, we can define the schema for the documents in a particular collection. It provides a lot of convenience in the creation and management of data in MongoDB.</p>
+
+<p>After installing the dependency for mongoose now create a "database" folder in root directory of the project and create a "<em>dataFile.js</em>" file in this folder and paste the following code into this file.</p>
+
+<pre>var mongoose = require('mongoose'); 
+// Connection URL  
+var db = 'mongodb://localhost:27017/employeeDetails';  
+    // Use connect method to connect to the Server  
+ mongoose.connect(db, function (error) {
+    if (error) {
+        console.log(error);
+    }
+});
+
+var Schema = mongoose.Schema;
+var Employee_Schema = new Schema({
+    EmployeeName: String,
+    Designation: String,
+    Project: String,
+    Skills:String
+});
+
+var Employee = mongoose.model('employees', Employee_Schema);
+ 
+ module.exports=Employee;</pre>
+
+<p>In first lines of code we simply make a connection to our MongoDB database. We create a schema for the "employees" collection and define totally four attribute for the "Employee_Schema" and in next line we create an "employees" model using this schema. So when we perform any CRUD operation we will take this employee model and perform the CRUD operations.</p>
+
+<p>After creating the Employee models and schema now go to "<em>api.js</em>" file and replace the code of this file with following code.</p>
+
+<pre>var express=require('express');
+var router=express.Router();
+
+var Employee=require('../database/dataFile');
+
+router.get('/',function(req,resp,next){
+    Employee.find({},function(err,docs){
+        resp.send(docs);
+    })
+});
+
+ module.exports=router;</pre>
+
+<p>In above code we import the "Employee" model that we created in "dataFile.js" file and execute the "Find" method, this "find" method is similar to the "find" method of the MongoDB, so when we hit this api it will fetch out the all record form "Employees" collection and return this data as response. Let’s check that, it is working or not. Now save all the changes and open you browser and paste this URL "http://localhost:4500/api" in browser and press the enter. When we hit the "api/" route it will return the list of all employees as below.</p>
+
+<p><img height="707px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image012.png" width="414px" alt="Image 12" data-src="/KB/scripting/1185294/image012.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image012-r-400.png 400w, /KB/scripting/1185294/image012.png 414w" sizes="414px" srcset="/KB/scripting/1185294/image012-r-400.png 400w, /KB/scripting/1185294/image012.png 414w"></p>
+
+<p>Now our "API", "Database" and "Server" all are ready, only remaining part is "client" application. Let’s start the work on "client" application of the project.</p>
+
+<h2>Step 10: Create package.json file</h2>
+
+<p>Now go to "<em>client</em>" folder and create a "<em>package.json</em>" file and past the below code into this file.</p>
+
+<pre>{
+  "name": "mytasklist",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "@angular/common": "~2.1.1",
+    "@angular/compiler": "~2.1.1",
+    "@angular/core": "~2.1.1",
+    "@angular/forms": "~2.1.1",
+    "@angular/http": "~2.1.1",
+    "@angular/platform-browser": "~2.1.1",
+    "@angular/platform-browser-dynamic": "~2.1.1",
+    "@angular/router": "~3.1.1",
+    "@angular/upgrade": "~2.1.1",
+    "angular-in-memory-web-api": "~0.1.13",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.45",
+    "angular-cli": "^1.0.0-beta.28.3",
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.0.3"
+  }
+}</pre>
+
+<p>The above code define all the packages and dependencies that we need to create a Angular2 client and also contain the commands for start, typescript, and lite server. lite-server provide a Lightweight development only node server that serves a web app, opens it in the browser, refreshes when html or javascript change, injects CSS changes using sockets, and has a fallback page when a route is not found.</p>
+
+<h2>Step 11: Create tsconfig.json file</h2>
+
+<p>Now create another file in client folder and named this file as "<em>tsconfig.json</em>" and paste the following code into this file. This file contains the some configuration code for the typescript.</p>
+
+<pre>{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  }
+}</pre>
+
+<h2>Step 12: Create systemjs.config.js file</h2>
+
+<p>Again create a new file in client folder and named this file as "<em>systems.config.js</em>" and paste the following code into this file. This file contain all information about the client system like angular packages, path and main file for the application(main.js) and also contain other informations.</p>
+
+<pre>/**
+ * System configuration for Angular samples
+ * Adjust as necessary for your application needs.
+ */
+(function (global) {
+  System.config({
+    paths: {
+      // paths serve as alias
+      'npm:': 'node_modules/'
+    },
+    // map tells the System loader where to look for things
+    map: {
+      // our app is within the app folder
+      app: 'app',
+      // angular bundles
+      '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
+      '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
+      '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
+      '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
+      '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
+      '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
+      '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
+      '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+      // other libraries
+      'rxjs':                      'npm:rxjs',
+      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
+    },
+    // packages tells the System loader how to load when no filename and/or no extension
+    packages: {
+      app: {
+        main: './main.js',
+        defaultExtension: 'js'
+      },
+      rxjs: {
+        defaultExtension: 'js'
+      },
+      'angular-in-memory-web-api': {
+        main: './index.js',
+        defaultExtension: 'js'
+      }
+    }
+  });
+})(this);</pre>
+
+<h2>Step 13: Install all the packages</h2>
+
+<p>We defined a list of the packages in "package.json" file, so now we install all these packages. For this move to your "client" directory and run the "npm install --save" command this command take a little bit time and install all the packages that we defined in "package.json" file. After completion of this command you will find that a new folder "node_modules" has been created and this folder contains all the required modules.</p>
+
+<p><img height="94px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image013.png" width="628px" alt="Image 13" data-src="/KB/scripting/1185294/image013.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image013-r-400.png 400w, /KB/scripting/1185294/image013.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image013-r-400.png 400w, /KB/scripting/1185294/image013.png 628w"></p>
+
+<h2>Step 14: Create app.module.ts file</h2>
+
+<p>Now create a folder in your client directory and named this folder as "app". After creating the folder now create "<em>app.module.ts</em>" file and paste the following code into this file. The app.module.ts file is parent module of all other modules, when ever we create a component, services, filter and directives then first of all we need to register all of these in app.module.ts file.</p>
+
+<pre>import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { AppComponent } from './components/app/app.component';
+@NgModule({
+    imports: [BrowserModule, HttpModule, FormsModule],
+    declarations: [AppComponent,
+    ],
+    bootstrap: [AppComponent]
+})
+export class AppModule { }</pre>
+
+<h2>Step 15: Create Main.ts file</h2>
+
+<p>Now create a new file in client directory and named this file as "<em>main.ts</em>" and paste the following code into this file. This file is starting point of our application and bootstrap the AppModule.</p>
+
+<pre>import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);</pre>
+
+<h2>Step 16: Create app component</h2>
+
+<p>Now create an "app" folder in client directory. In this app folder we will insert all our components, services and custom filters. After creating the "app" folder now create another folder in this "App" folder and named this folder as "components", in this "component" folder we create the components. After creating the "components" again create an "app" folder into this "components" folder, in this "app" folder we create files for the "app" component.</p>
+
+<p>Now create an "app.component.ts" file and paste the following code into this file.</p>
+
+<pre>import { Component } from '@angular/core';
+@Component({
+  moduleId: module.id,
+  selector: 'my-app',
+  templateUrl: 'app.component.html'
+
+})
+export class AppComponent { }</pre>
+
+<p>In above code we create a simple component and defined the app.component.html" as templateUrl for this component, so we need to create an html template file also. Again create a file and named this file as "app.component.html" and paste the following code into this file.</p>
+
+<pre lang="html" data-lang-orig="html"><span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">="</span><span class="code-keyword">container"</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">h1</span><span class="code-keyword">&gt;</span>Congrats! You set MEAN Stack2 Application Successfully<span class="code-keyword">&lt;</span><span class="code-leadattribute">/h1</span><span class="code-keyword">&gt;</span>
+<span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span></pre>
+
+<p>Till now we create all the files and make all the setup that are required to run a MEAN Stack application, a last step is reaming to run the application that start the client app. Now open "integrated Terminal", moves to "client" directory and run the "npm start" command. This command build all the typescript file and create the corresponding JavaScript and map files. The "npm start" command run the "lite server".</p>
+
+<p><img height="544px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image014.png" width="592px" alt="Image 14" data-src="/KB/scripting/1185294/image014.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image014-r-400.png 400w, /KB/scripting/1185294/image014.png 592w" sizes="592px" srcset="/KB/scripting/1185294/image014-r-400.png 400w, /KB/scripting/1185294/image014.png 592w"></p>
+
+<p>If your "node" server already running then refresh the browser else run the "nodemon server" command and you will get the following output on your screen.</p>
+
+<p><img height="155px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image015.png" width="628px" alt="Image 15" data-src="/KB/scripting/1185294/image015.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image015-r-400.png 400w, /KB/scripting/1185294/image015.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image015-r-400.png 400w, /KB/scripting/1185294/image015.png 628w"></p>
+
+<p>If you get the above screen then congratulation to you, here we complete the MEAN Stack configuration and now we start the work on our "Employee Management" system part. If you don’t get above screen then there some chances that you are getting some error, so try to resolve that error.</p>
+
+<h2>Add bootstrap and create project layout</h2>
+
+<p>Till now we successfully configured the MEAN Stack 2 application, now we add some required files for the bootstrap and create the layout for our application. Now go to "index.html" file add the following code at top of the head section. In below code we add CDN for the jQuery and bootstrap and we also add a "base" tag in the first line, this base tag will be use at the time of routing and provide a base(common) URL to all the routes that we will create later in this project.</p>
+
+<pre lang="html" data-lang-orig="html"><span class="code-keyword">&lt;</span><span class="code-leadattribute">base</span><span class="code-attribute"> </span><span class="code-attribute">href</span><span class="code-keyword">="</span><span class="code-keyword">/"</span><span class="code-attribute"> </span><span class="code-keyword">/</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">link</span><span class="code-attribute"> </span><span class="code-attribute">rel</span><span class="code-keyword">="</span><span class="code-keyword">stylesheet"</span><span class="code-attribute"> </span><span class="code-attribute">href</span><span class="code-keyword">="</span><span class="code-keyword">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span><span class="code-keyword">&gt;</span>
+
+<span class="code-keyword">&lt;!--</span><span class="code-keyword"><span class="code-comment"> jQuery library </span><span class="code-comment">--&gt;</span></span>
+<span class="code-keyword">&lt;</span><span class="code-leadattribute">script</span><span class="code-attribute"> </span><span class="code-attribute">src</span><span class="code-keyword">="</span><span class="code-keyword">https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-keyword">/</span><span class="code-leadattribute">script</span><span class="code-keyword">&gt;</span>
+
+<span class="code-keyword">&lt;!--</span><span class="code-keyword"><span class="code-comment"> Latest compiled JavaScript </span><span class="code-comment">--&gt;</span></span>
+<span class="code-keyword">&lt;</span><span class="code-leadattribute">script</span><span class="code-attribute"> </span><span class="code-attribute">src</span><span class="code-keyword">="</span><span class="code-keyword">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-keyword">/</span><span class="code-leadattribute">script</span><span class="code-keyword">&gt;</span></pre>
+
+<h2>Create Home component</h2>
+
+<p>We create a home component and show the list of all employees using this component. Now go to component folder add a new folder and named this folder as "home", in this folder now add a new "<em>home.component.ts</em>" file and paste following code.</p>
+
+<pre lang="html" data-lang-orig="html">import { Component } from '@angular/core';
+
+@Component({
+    moduleId: module.id,
+    selector: 'home',
+    templateUrl: 'home.component.html',
+    
+})
+export class homeComponent {
+}</pre>
+
+<p>Now create a "<em>home.component.html</em>" file and paste following code into this file.</p>
+
+<pre>&lt;h1&gt;This is home page&lt;/h1&gt;</pre>
+
+<h2>Add newEmployee component</h2>
+
+<p>Using this component we will provide the functionality to add a new employee. Now go to component folder add a new folder and named this folder as "newEmployee", in this folder now add a new "<em>newEmployee.component.ts</em>" file and paste following code.</p>
+
+<pre>import { Component } from '@angular/core';
+
+@Component({
+    moduleId: module.id,
+    selector: newEmployee,
+    templateUrl: newEmployee.component.html',
+    
+})
+export class newEmployee Component {
+}</pre>
+
+<p>Let’s add a template file for this component, now create a "<em>newEmployee.component.html</em>" file and paste following code into this file.</p>
+
+<pre lang="html" data-lang-orig="html"><span class="code-keyword">&lt;</span><span class="code-leadattribute">h2</span><span class="code-keyword">&gt;</span>Add New Employee<span class="code-keyword">&lt;</span><span class="code-leadattribute">/h2</span><span class="code-keyword">&gt;</span></pre>
+
+<h2>Add details Component</h2>
+
+<p>Using the "details" component we will show the details of an employee. similar to previous step add a "details" folder and add "Details.component.ts" file and paste the following code into this file.</p>
+
+<pre>import { Component } from '@angular/core';
+
+@Component({
+    moduleId: module.id,
+    selector: 'edit',
+    templateUrl: 'edit.component.html',
+    
+})
+export class editComponent {
+}</pre>
+
+<p>Now create a "details.component.html" page and paste the following code into this file.</p>
+
+<pre>&lt;h2&gt;This is a Details page&lt;/h2&gt;</pre>
+
+<h2>Add edit component</h2>
+
+<p>Using this component we add the functionality to edit the information of an existing employee. So create a "edit" folder and create "Edit.component.ts"file and paste following code into this file.</p>
+
+<pre>@Component({
+    moduleId: module.id,
+    selector: 'nav-menu',
+    templateUrl: 'navmenu.component.html',
+    styleUrls: ['navmenu.component.css']
+})
+export class NavMenuComponent {
+}</pre>
+
+<p>Now create "edit.component.html" page and paste the following code.</p>
+
+<p>&lt;h1&gt;This is edit page&lt;/h1&gt;</p>
+
+<h2>Create navMenu Component</h2>
+
+<p>We will add a side menu into our application and using this side menu we will provide the functionality of redirect to the "newEmployee" and "Home" page of the application. So add a "navmenu" folder into component section and create a "<em>navmenu.component.ts</em>" file and paste the following code.</p>
+
+<pre>import { Component } from '@angular/core';
+
+@Component({
+    moduleId: module.id,
+    selector: 'nav-menu',
+    templateUrl: 'navmenu.component.html',
+    styleUrls: ['navmenu.component.css']
+})
+export class NavMenuComponent {
+}</pre>
+
+<p>Now create a "<em>navmenu.component.html</em>" file and paste the following code.</p>
+
+<pre lang="html" data-lang-orig="html"><span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">main-nav'</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">navbar navbar-inverse'</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">navbar-header'</span><span class="code-keyword">&gt;</span>
+            <span class="code-keyword">&lt;</span><span class="code-leadattribute">button</span><span class="code-attribute"> </span><span class="code-attribute">type</span><span class="code-keyword">='</span><span class="code-keyword">button'</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">navbar-toggle'</span><span class="code-attribute"> </span><span class="code-attribute">data-toggle</span><span class="code-keyword">='</span><span class="code-keyword">collapse'</span><span class="code-attribute"> </span><span class="code-attribute">data-target</span><span class="code-keyword">='</span><span class="code-keyword">.navbar-collapse'</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">span</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">sr-only'</span><span class="code-keyword">&gt;</span>Toggle navigation<span class="code-keyword">&lt;</span><span class="code-leadattribute">/span</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">span</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">icon-bar'</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-leadattribute">/span</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">span</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">icon-bar'</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-leadattribute">/span</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">span</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">icon-bar'</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-leadattribute">/span</span><span class="code-keyword">&gt;</span>
+            <span class="code-keyword">&lt;</span><span class="code-leadattribute">/button</span><span class="code-keyword">&gt;</span>
+            <span class="code-keyword">&lt;</span><span class="code-leadattribute">a</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">navbar-brand'</span><span class="code-attribute"> </span><span class="code-attribute">[routerLink]</span><span class="code-keyword">="</span><span class="code-keyword">['/home']"</span><span class="code-keyword">&gt;</span>EMS<span class="code-keyword">&lt;</span><span class="code-leadattribute">/a</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">clearfix'</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">navbar-collapse collapse'</span><span class="code-keyword">&gt;</span>
+            <span class="code-keyword">&lt;</span><span class="code-leadattribute">ul</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">nav navbar-nav'</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">li</span><span class="code-attribute"> </span><span class="code-attribute">[routerLinkActive]</span><span class="code-keyword">="</span><span class="code-keyword">['link-active']"</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">a</span><span class="code-attribute"> </span><span class="code-attribute">[routerLink]</span><span class="code-keyword">="</span><span class="code-keyword">['/home']"</span><span class="code-keyword">&gt;</span>
+                        <span class="code-keyword">&lt;</span><span class="code-leadattribute">span</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">glyphicon glyphicon-home'</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-leadattribute">/span</span><span class="code-keyword">&gt;</span> Home
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/a</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">/li</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">li</span><span class="code-attribute"> </span><span class="code-attribute">[routerLinkActive]</span><span class="code-keyword">="</span><span class="code-keyword">['link-active']"</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">a</span><span class="code-attribute"> </span><span class="code-attribute">[routerLink]</span><span class="code-keyword">="</span><span class="code-keyword">['/new']"</span><span class="code-keyword">&gt;</span>
+                        <span class="code-keyword">&lt;</span><span class="code-leadattribute">span</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">glyphicon glyphicon-user'</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-leadattribute">/span</span><span class="code-keyword">&gt;</span> New Employee
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/a</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">/li</span><span class="code-keyword">&gt;</span>
+            <span class="code-keyword">&lt;</span><span class="code-leadattribute">/ul</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+<span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span></pre>
+
+<p>After creating the ".ts" and ".html" file now we create a ".css" file to add the style for this sidemenu, so add the "sidemenu.component.css" file and paste the following code into this file.</p>
+
+<pre lang="css" data-lang-orig="css"><span class="code-leadattribute">li</span> .<span class="code-leadattribute">glyphicon</span> {
+    <span class="code-attribute">margin-right</span><span class="code-keyword">:</span><span class="code-keyword"> 10px</span>;
+}
+
+<span class="code-comment">/*</span><span class="code-comment"> Highlighting rules for nav menu items */</span>
+<span class="code-leadattribute">li</span>.<span class="code-leadattribute">link-active</span> <span class="code-leadattribute">a</span>,
+<span class="code-leadattribute">li</span>.<span class="code-leadattribute">link-active</span> <span class="code-leadattribute">a:hover</span>,
+<span class="code-leadattribute">li</span>.<span class="code-leadattribute">link-active</span> <span class="code-leadattribute">a:focus</span> {
+    <span class="code-attribute">background-color</span><span class="code-keyword">:</span><span class="code-keyword"> #4189C7</span>;
+    <span class="code-attribute">color</span><span class="code-keyword">:</span><span class="code-keyword"> white</span>;
+}
+
+<span class="code-comment">/*</span><span class="code-comment"> Keep the nav menu independent of scrolling and on top of other items */</span>
+.<span class="code-leadattribute">main-nav</span> {
+    <span class="code-attribute">position</span><span class="code-keyword">:</span><span class="code-keyword"> fixed</span>;
+    <span class="code-attribute">top</span><span class="code-keyword">:</span><span class="code-keyword"> 0</span>;
+    <span class="code-attribute">left</span><span class="code-keyword">:</span><span class="code-keyword"> 0</span>;
+    <span class="code-attribute">right</span><span class="code-keyword">:</span><span class="code-keyword"> 0</span>;
+    <span class="code-attribute">z-index</span><span class="code-keyword">:</span><span class="code-keyword"> 1</span>;
+}
+
+<span class="code-leadattribute">@media</span> <span class="code-leadattribute">(min-width:</span> 768px) {
+    <span class="code-comment">/*</span><span class="code-comment"> On small screens, convert the nav menu to a vertical sidebar */</span>
+    <span class="code-attribute">.</span><span class="code-leadattribute">main-nav</span> {
+        <span class="code-attribute">height</span><span class="code-keyword">:</span><span class="code-keyword"> 100%</span>;
+        <span class="code-attribute">width</span><span class="code-keyword">:</span><span class="code-keyword"> calc(25% - 20px)</span>;
+    }
+    .<span class="code-leadattribute">navbar</span> {
+        <span class="code-attribute">border-radius</span><span class="code-keyword">:</span><span class="code-keyword"> 0px</span>;
+        <span class="code-attribute">border-width</span><span class="code-keyword">:</span><span class="code-keyword"> 0px</span>;
+        <span class="code-attribute">height</span><span class="code-keyword">:</span><span class="code-keyword"> 100%</span>;
+    }
+    .<span class="code-leadattribute">navbar-header</span> {
+        <span class="code-attribute">float</span><span class="code-keyword">:</span><span class="code-keyword"> none</span>;
+    }
+    .<span class="code-leadattribute">navbar-collapse</span> {
+        <span class="code-attribute">border-top</span><span class="code-keyword">:</span><span class="code-keyword"> 1px solid #444</span>;
+        <span class="code-attribute">padding</span><span class="code-keyword">:</span><span class="code-keyword"> 0px</span>;
+    }
+    .<span class="code-leadattribute">navbar</span> <span class="code-leadattribute">ul</span> {
+        <span class="code-attribute">float</span><span class="code-keyword">:</span><span class="code-keyword"> none</span>;
+    }
+    .<span class="code-leadattribute">navbar</span> <span class="code-leadattribute">li</span> {
+        <span class="code-attribute">float</span><span class="code-keyword">:</span><span class="code-keyword"> none</span>;
+        <span class="code-attribute">font-size</span><span class="code-keyword">:</span><span class="code-keyword"> 15px</span>;
+        <span class="code-attribute">margin</span><span class="code-keyword">:</span><span class="code-keyword"> 6px</span>;
+    }
+    .<span class="code-leadattribute">navbar</span> <span class="code-leadattribute">li</span> <span class="code-leadattribute">a</span> {
+        <span class="code-attribute">padding</span><span class="code-keyword">:</span><span class="code-keyword"> 10px 16px</span>;
+        <span class="code-attribute">border-radius</span><span class="code-keyword">:</span><span class="code-keyword"> 4px</span>;
+    }
+    .<span class="code-leadattribute">navbar</span> <span class="code-leadattribute">a</span> {
+        <span class="code-comment">/*</span><span class="code-comment"> If a menu item's text is too long, truncate it */</span>
+        <span class="code-attribute">width</span><span class="code-keyword">:</span><span class="code-keyword"> 100%</span>;
+        <span class="code-attribute">white-space</span><span class="code-keyword">:</span><span class="code-keyword"> nowrap</span>;
+        <span class="code-attribute">overflow</span><span class="code-keyword">:</span><span class="code-keyword"> hidden</span>;
+        <span class="code-attribute">text-overflow</span><span class="code-keyword">:</span><span class="code-keyword"> ellipsis</span>;
+    }
+<span class="code-leadattribute">}</span></pre>
+
+<p>After adding all these component now following will be the structure of our "component" section.</p>
+
+<p><img height="634px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image016.png" width="353px" alt="Image 16" data-src="/KB/scripting/1185294/image016.png" class=" ls-is-cached lazyloaded"></p>
+
+<h2>Register the components and perform the routing</h2>
+
+<p>After creating all the required components now we needs to register all these components into "<em>app.modules.ts</em>" file, so open your "<em>app.modules.ts</em>" file and replace the code with following code into this file.</p>
+
+<pre>import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { AppComponent } from './components/app/app.component';
+import {NavMenuComponent}  from './components/navmenu/navmenu.component';
+import { newEmployeeComponent } from "./components/newEmployee/newEmployee.component";
+import {homeComponent}  from "./components/home/home.component";
+import {editComponent} from "./components/edit/edit.component";
+import {detailsComponent} from "./components/details/details.component";
+@NgModule({
+    declarations: [
+    AppComponent,
+    NavMenuComponent,
+    newEmployeeComponent,
+    homeComponent,
+    editComponent,
+    detailsComponent
+    ],
+    imports: [BrowserModule,
+     HttpModule,
+    FormsModule,
+    RouterModule.forRoot([
+            { path: '', redirectTo: 'home', pathMatch: 'full' },
+            { path: 'home', component: homeComponent },
+            { path: 'details/:id', component: detailsComponent },
+            { path: 'new', component: newEmployeeComponent },
+            { path: 'edit/:id', component: editComponent },
+            { path: '**', redirectTo: 'home' }
+        ])],
+    bootstrap: [AppComponent]
+})
+export class AppModule { }</pre>
+
+<p>In above code lines of code we register all the components into "declarations" section and also perform the routing for these components.</p>
+
+<h2>Add router-outlet</h2>
+
+<p>Now go to your "app.component.html" page and replace the code of this file with following code.</p>
+
+<pre lang="html" data-lang-orig="html"><span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">container-fluid'</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">row'</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">col-sm-3'</span><span class="code-keyword">&gt;</span>
+            <span class="code-keyword">&lt;</span><span class="code-leadattribute">nav-menu</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-leadattribute">/nav-menu</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">='</span><span class="code-keyword">col-sm-9 body-content'</span><span class="code-keyword">&gt;</span>
+           <span class="code-keyword">&lt;</span><span class="code-leadattribute">router-outlet</span><span class="code-keyword">&gt;</span><span class="code-keyword">&lt;</span><span class="code-leadattribute">/router-outlet</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+<span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span></pre>
+
+<p>In above code we add the "sidemenu" using the "nav-menu" selector and also add the "router-outlet", this router-outlet work as a primary outlet for all the components, in other words <code>RouterOutlet</code> is a "placeholder" component that gets expanded to each route's content.</p>
+
+<p>After making all the changes now save all the changes and refresh or restart your application. Now following will be the structure of our application.</p>
+
+<p><img height="291px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image017.png" width="628px" alt="Image 17" data-src="/KB/scripting/1185294/image017.png" class="lazyautosizes lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image017-r-400.png 400w, /KB/scripting/1185294/image017.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image017-r-400.png 400w, /KB/scripting/1185294/image017.png 628w"></p>
+
+<p><img height="283px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image018.png" width="628px" alt="Image 18" data-src="/KB/scripting/1185294/image018.png" class="lazyautosizes lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image018-r-400.png 400w, /KB/scripting/1185294/image018.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image018-r-400.png 400w, /KB/scripting/1185294/image018.png 628w"></p>
+
+<p><img height="338px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image019.png" width="628px" alt="Image 19" data-src="/KB/scripting/1185294/image019.png" class="lazyautosizes lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image019-r-400.png 400w, /KB/scripting/1185294/image019.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image019-r-400.png 400w, /KB/scripting/1185294/image019.png 628w"></p>
+
+<h2>Add service</h2>
+
+<p>Now, our API is ready to return the employee list. Let’s use this API and display the employee information. We need a Service, which can use this API and get the result. Add a Service folder in an app section. After creating the folder, add a TypeScript file and name this file as services.ts and paste the code given below into this file.&nbsp;</p>
+
+<pre>import { Injectable } from '@angular/core';
+import { Http, Headers, RequestOptions, Response } from '@angular/http';
+import { Observable } from "RxJS/Rx";
+
+@Injectable()
+export class EmployeeServcies {
+    constructor(private http: Http) {
+       
+    }
+    getEmployeeList() {
+        return this.http.get('http://localhost:4500/api');
+    }
+    
+}</pre>
+
+<p>In the code given above, we create an <code>EmployeeServcies</code> class and decorate this with @Injectable meta data. "@Injectbale meta data is used to define a class as a Service. In this Service class, we add <code>getEmployeeList</code> method. In this method, we are using GET method of HTTP class to perform HTTP GET request to the Server.</p>
+
+<p>After creating the Service, now we need to register this Service in <em>app.modules.ts</em> file. Open your app.modules.ts file, import this Service and register this Service into providers. We are registering this Service in an <em>app.modules.ts</em> file, which means now this Service is a global Service. We can use this Service in any components and we don’t need to register this Service in each component.</p>
+
+<p><img height="526px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image020.png" width="628px" alt="Image 20" data-src="/KB/scripting/1185294/image020.png" class="lazyautosizes lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image020-r-400.png 400w, /KB/scripting/1185294/image020.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image020-r-400.png 400w, /KB/scripting/1185294/image020.png 628w"></p>
+
+<p>After creating and registering the Service, now we use this Service in our home component, so open <em>home.component.ts</em> file and paste the code given below.&nbsp;</p>
+
+<pre>import { EmployeeServcies } from './../../services/services';
+import { Component } from '@angular/core';
+import { Response } from '@angular/http';
+
+@Component({
+    moduleId: module.id,
+    selector: 'home',
+    templateUrl: 'home.component.html',
+    
+})
+export class homeComponent {
+      public EmployeeList = [];
+    public constructor(private empService: EmployeeServcies) {
+        this.empService.getEmployeeList()
+            .subscribe(
+            (data: Response) =&gt; (this.EmployeeList = data.json())
+            );
+
+    }
+}</pre>
+
+<p>In the code given above, we create an instance(empService) of EmployeeServcies Service and use the <code>getEmployeeList</code> method of this Service to get the employee list. You can see that we are using a subscribe. Actually, an Angular 2 provides a new pattern to run asynchronous requests, which are knojwn as Observables, http is the successor to Angular 1's <code>$http.</code> Instead of returning a Promise, its <code>http.get()</code> method returns an Observable object. Using subscribe, method we can use the observable, the "subscribe" method tells the observable that you perform your task here is some one who listening and watching you. Perform the callback function when you return the result. In subscribe method, we get the data and assign the data into EmployeeList. Now, we use this list to display the employee list.</p>
+
+<p>Open <em>home.component.html</em> file and paste the code given below.</p>
+
+<pre lang="html" data-lang-orig="html"><span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">="</span><span class="code-keyword">row"</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">="</span><span class="code-keyword">col-md-12"</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">h3</span><span class="code-keyword">&gt;</span>Employee List<span class="code-keyword">&lt;</span><span class="code-leadattribute">/h3</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">br</span><span class="code-attribute"> </span><span class="code-keyword">/</span><span class="code-keyword">&gt;</span>
+       
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+<span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+<span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">="</span><span class="code-keyword">row"</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">div</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">="</span><span class="code-keyword">table-responsive"</span><span class="code-keyword">&gt;</span>
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">table</span><span class="code-attribute"> </span><span class="code-attribute">class</span><span class="code-keyword">="</span><span class="code-keyword">table"</span><span class="code-keyword">&gt;</span>
+            <span class="code-keyword">&lt;</span><span class="code-leadattribute">thead</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">tr</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">th</span><span class="code-keyword">&gt;</span>
+                        
+                        S.No.
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/th</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">th</span><span class="code-keyword">&gt;</span>
+                        EmployeeName
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/th</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">th</span><span class="code-keyword">&gt;</span>
+                        Designation
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/th</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">th</span><span class="code-keyword">&gt;</span>
+                        Project
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/th</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">th</span><span class="code-keyword">&gt;</span>
+                        Action
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/th</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">/tr</span><span class="code-keyword">&gt;</span>
+            <span class="code-keyword">&lt;</span><span class="code-leadattribute">/thead</span><span class="code-keyword">&gt;</span>
+            <span class="code-keyword">&lt;</span><span class="code-leadattribute">tbody</span><span class="code-keyword">&gt;</span>
+                
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">tr</span><span class="code-attribute"> </span><span class="code-attribute">*ngFor</span><span class="code-keyword">="</span><span class="code-keyword">let empData of EmployeeList  ; let i = index; trackBy: employeeId"</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">td</span><span class="code-keyword">&gt;</span>
+                        {{i+1}}
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/td</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">td</span><span class="code-keyword">&gt;</span>
+                        {{empData.EmployeeName}}
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/td</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">td</span><span class="code-keyword">&gt;</span>
+                       {{empData.Designation}}
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/td</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">td</span><span class="code-keyword">&gt;</span>
+                       {{empData.Project}}
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/td</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">td</span><span class="code-keyword">&gt;</span>
+
+                        <span class="code-keyword">&lt;</span><span class="code-leadattribute">a</span><span class="code-attribute"> </span><span class="code-attribute">[routerLink]</span><span class="code-keyword">="</span><span class="code-keyword">['/details/',empData._id]"</span><span class="code-attribute">
+                           </span><span class="code-attribute">class</span><span class="code-keyword">="</span><span class="code-keyword">btn btn-primary"</span><span class="code-keyword">&gt;</span>
+                            Detail
+                        <span class="code-keyword">&lt;</span><span class="code-leadattribute">/a</span><span class="code-keyword">&gt;</span>
+                        <span class="code-keyword">&lt;</span><span class="code-leadattribute">a</span><span class="code-attribute"> </span><span class="code-attribute">[routerLink]</span><span class="code-keyword">="</span><span class="code-keyword">['/edit/',empData._id]"</span><span class="code-attribute">
+                           </span><span class="code-attribute">class</span><span class="code-keyword">="</span><span class="code-keyword">btn btn-success"</span><span class="code-keyword">&gt;</span>
+                            Edit
+                        <span class="code-keyword">&lt;</span><span class="code-leadattribute">/a</span><span class="code-keyword">&gt;</span>
+                        <span class="code-keyword">&lt;</span><span class="code-leadattribute">a</span><span class="code-attribute"> 
+                           </span><span class="code-attribute">class</span><span class="code-keyword">="</span><span class="code-keyword">btn btn-danger"</span><span class="code-attribute"> </span><span class="code-attribute">(click)</span><span class="code-keyword">="</span><span class="code-keyword">deleteEmployee(empData._id)"</span><span class="code-keyword">&gt;</span>
+                            Delete
+                        <span class="code-keyword">&lt;</span><span class="code-leadattribute">/a</span><span class="code-keyword">&gt;</span>
+                    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/td</span><span class="code-keyword">&gt;</span>
+                <span class="code-keyword">&lt;</span><span class="code-leadattribute">/tr</span><span class="code-keyword">&gt;</span>
+                
+        <span class="code-keyword">&lt;</span><span class="code-leadattribute">/table</span><span class="code-keyword">&gt;</span>
+    <span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span>
+<span class="code-keyword">&lt;</span><span class="code-leadattribute">/div</span><span class="code-keyword">&gt;</span></pre>
+
+<p>In the code given above, we perform ngFor on an EmployeeList and create a list of employees. We also add three anchor tags (Edit, Delete and Detail) for an each employee entry. We use the routerLink to link the anchor tag to the specific part of our app.</p>
+
+<p>After making all the changes, save the project and refresh the Browser and you will get the result given below.</p>
+
+<p><img height="215px" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/image021.png" width="628px" alt="Image 21" data-src="/KB/scripting/1185294/image021.png" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/KB/scripting/1185294/image021-r-400.png 400w, /KB/scripting/1185294/image021.png 628w" sizes="628px" srcset="/KB/scripting/1185294/image021-r-400.png 400w, /KB/scripting/1185294/image021.png 628w"></p>
+
+<h2>Summary</h2>
+
+<p>This is the first part of "Build Modern App with MEAN Stack 2.0" series. Today, we learned how to setup Angular 2 Application with Node.js. Create a Node.js server, use the mongoose library to make the connection with MongoDB database. We created some component and performed the routing for these components. Create Service to get the data from Web API, using builtin http Service and display these data into a tabular format. In the next article, we will create some screens to add, delete or edit the employee information. We also provide the functionality of searching and sorting employee information.</p>
+
+<p>You can download this project from the <a href="https://github.com/Pankajmalhan/MeanStack2">https://github.com/Pankajmalhan/MeanStack2</a></p>
+
+
+						</div>
+						
+
+						
+
+						<div class="float-right" style="margin:20px 0 0 10px;border:1px solid #ccc">
+						
+						</div>
+                        
+                        
+						
+						<h2>License</h2>
+						<div id="LicenseTerms"><p>This article, along with any associated source code and files, is licensed under <a href="http://www.codeproject.com/info/cpol10.aspx" rel="license">The Code Project Open License (CPOL)</a></p></div><h2 id="ctl00_AboutHeading">About the Author</h2>
+						    
+
+<div class="author-wrapper">
+
+    <div class="pic-wrapper"> 
+        <img id="ctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberPhoto" class="profile-pic" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/{d8bedc9d-379c-4598-a4ad-2bd85a6f7fc7}.png" style="border-width:0px;transform:rotate(3deg);">
+    </div>
+
+    <div class="container-member">  
+        <b><a id="ctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberProfileLink" class="author" href="https://www.codeproject.com/Members/PankajKumarChoudhary">Pankaj Kumar  Choudhary</a></b>
+
+        <table>
+        <tbody><tr>
+            <td rowspan="2" nowrap="" valign="middle">
+            <div id="ctl00_AboutAuthorRptr_ctl00_AboutAuthor_FollowOn" class="follow">
+	            <a href="https://www.twitter.com/pankajmalhan30"><img style="vertical-align:middle;border:0;height:24px;width:24px" alt="Twitter" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/twitter32.png"></a> 
+	            
+	            
+            </div>
+            </td>
+            <td nowrap="nowrap">
+                <div class="company">
+                    <span id="ctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberJobTitle">Student</span>
+	                <span id="ctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberCompany"></span>
+                </div>
+            </td>
+            <td rowspan="2" style="padding-left:15px">
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span id="ctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberLocation">India <img src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/IN.gif" alt="India" width="16px" height="11px"></span>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+    <div class="description">
+        Pankaj Kumar Choudhary loves Microsoft and Database technologies. He has experience on several database technology like SQL Server, MySQL, Oracle, MongoDB, PostgreSQL . He has knowledge of several technology like Asp.Net MVC, Entity Framework , Android, Php, AngularJS, Node.js, Angular2, React, Ionic and Android. 
+
+        
+    </div>
+
+</div><br>
+						
+						
+
+						<div class="clearfix"></div>
+
+						<div style="padding-top:8px">
+							
+						</div>
+
+					
+
+				    
+					</form>
+
+				</div>
+
+				
+				<div class="bottom-promo"> 
+				    
+				</div>
+				
+                
+                
+
+				
+				
+
+					<h2>Comments and Discussions</h2>
+					
+					<p><img alt="Comment" src="./Build Modern App with MEAN Stack 2.0– Part 1 - CodeProject_files/NewComment.gif" width="12px" height="16px">
+					<b>6 messages</b> have been posted for this article 
+					Visit <b><a id="ctl00_ArticleLink" href="https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part">https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part</a></b> to post and view comments on 
+					this article, or click <b><a id="ctl00_PrintWithMessage" href="https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part?display=PrintAll">here</a></b> 
+					to get a print view with messages.</p>
+					
+				
+
+			</div>
+			
+
+            
+            
+            
+
+        </div>
+        
+
+		
+		<div class="theme1-background" style="height:2px;margin:5px 0" id="stickyStop"></div>
+
+		<div class="site-footer">
+			<div class="align-left">
+				<a id="ctl00_PermaLink" href="https://www.codeproject.com/Articles/1185294/Build-Modern-App-with-MEAN-Stack-Part">Permalink</a><br>
+				<a id="ctl00_AdvertiseLink" href="http://developermedia.com/">Advertise </a><br>
+				<a id="ctl00_PrivacyLink" href="https://www.codeproject.com/info/privacy.aspx">Privacy</a><br>
+    			<a id="ctl00_CookiePolicyLink" href="https://www.codeproject.com/info/cookie.aspx">Cookies</a><br>
+                <a id="ctl00_TermsOfUseLink" href="https://www.codeproject.com/info/TermsOfUse.aspx">Terms of Use</a><br>
+			</div>
+
+            <div class="align-center">
+				
+				
+
+				
+
+	            
+
+                <br>
+			</div>
+                
+			<div class="align-right">
+				Article Copyright 2017 by Pankaj Kumar  Choudhary<br>Everything else
+				Copyright © <a href="mailto:webmaster@codeproject.com">CodeProject</a>, 1999-2021 <br>
+                <br>
+				Web03 
+				2.8.20210224.2<br>
+			</div>
+		</div>
+		
+
+		<br clear="all">
+		
+			
+
+	</div> 
+	</div> 
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript"> // DEFERRED script
+
+document.addEventListener('DOMContentLoaded', function() {
+
+	$('#RHSticky').sticky($('#stickyStop'));
+	$('#ctl00_StickyBlock').sticky($('#stickyStop'));
+	
+	$('#__EVENTVALIDATION').attr('autocomplete', 'off');
+	
+	cookieconsent.initialise({
+	                                    enabled : true,
+	                                    cookie  : { domain: 'codeproject.com' },
+	                                    palette : {
+	                                        popup: { background: '#ff9900' },
+	                                        button: { background: '#f5d948' }
+	                                    },
+	                                    law :  {
+	                                        showForAllRegions : true, 
+	                                        countryCode : 'US' 
+	                                    },
+	                                    theme: 'edgeless',
+	                                    type : 'opt-in-out',
+	                                    content: {
+	                                        message: 'Like every other website we use cookies. By using our site you acknowledge that you have read and understand our <a href=\'/info/cookie.aspx\'>Cookie Policy</a>, <a href=\'/info/privacy.aspx\'>Privacy Policy</a>, and our <a href=\'/info/TermsOfUse.aspx\'>Terms of Service</a>.',
+	                                        href:    'https://www.codeproject.com/info/privacy.aspx',
+	                                        dismiss: 'Ask me later'
+	                                    },
+	                                    revokable:true,
+	                                    onStatusChange: function(status) {
+	                                        $.ajax({
+	                                		    dataType  : 'json',
+	                                            data: JSON.stringify({ allowCookies : this.hasConsented() }),
+	                                            url: '/script/membership/webservices/LoggedOnMemberservices.aspx/SetCookieConsent',
+	                                            cache: false,
+	                                            type: 'POST',
+	                                            contentType: 'application/json'
+	                                        })
+	                                        console.log(this.hasConsented() ? 'enable cookies' : 'disable cookies');
+	                                        console.log(this.hasAnswered() ? 'has answered' : 'did not answer');
+	                                    },
+	                                });
+
+})
+</script>
+
+
+
+
+
+
+
+
+
+
+<canvas id="cv1" width="1px" height="1px" style="position:absolute;left:0;top:0;pointer-events:none"></canvas><canvas id="cv2" width="1px" height="1px" style="position:absolute;left:0;top:0;pointer-events:none"></canvas><div id="MemberProfilePopupDiv" class="raised box" style="display: none; position: absolute;"></div><div id="MemberProfilePopupDiv" class="raised box" style="display: none; position: absolute;"></div><div id="MemberProfilePopupDiv" class="raised box" style="display: none; position: absolute;"></div></body></html>
