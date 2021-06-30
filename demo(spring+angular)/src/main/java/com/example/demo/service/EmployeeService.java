@@ -1,11 +1,13 @@
 package com.example.demo.service;
 
+import com.example.demo.exception.UserNotFoundException;
 import com.example.demo.model.Employee;
 import com.example.demo.repo.EmployeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -22,12 +24,19 @@ public class EmployeeService {
         return employeeRepo.save(employee);
     }
 
-    public List<Employee> finalAllEmployees() {
+    public List<Employee> findAllEmployees() {
         return employeeRepo.findAll();
     }
 
     public Employee updateEmployee(Employee employee) {
         return employeeRepo.save(employee);
     }
-    
+
+    public Employee findById(Long id) {
+        return employeeRepo.findEmployeeById(id).orElseThrow(() -> new UserNotFoundException("User not Found"));
+    }
+
+    public void deleteEmployee(Long id) {
+        employeeRepo.deleteEmployeeById(id);
+    }
 }
